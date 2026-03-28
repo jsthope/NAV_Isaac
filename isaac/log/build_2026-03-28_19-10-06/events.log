@@ -1,0 +1,56 @@
+[0.000000] (-) TimerEvent: {}
+[0.000178] (-) JobUnselected: {'identifier': 'isaac_common'}
+[0.000237] (-) JobUnselected: {'identifier': 'isaac_common_py'}
+[0.000263] (-) JobUnselected: {'identifier': 'isaac_ros_apriltag_interfaces'}
+[0.000311] (-) JobUnselected: {'identifier': 'isaac_ros_bi3d_interfaces'}
+[0.000337] (-) JobUnselected: {'identifier': 'isaac_ros_common'}
+[0.000346] (-) JobUnselected: {'identifier': 'isaac_ros_launch_utils'}
+[0.000353] (-) JobUnselected: {'identifier': 'isaac_ros_nitros_bridge_interfaces'}
+[0.000369] (-) JobUnselected: {'identifier': 'isaac_ros_nova_interfaces'}
+[0.000376] (-) JobUnselected: {'identifier': 'isaac_ros_pointcloud_interfaces'}
+[0.000382] (-) JobUnselected: {'identifier': 'isaac_ros_r2b_galileo'}
+[0.000391] (-) JobUnselected: {'identifier': 'isaac_ros_rosbag_utils'}
+[0.000398] (-) JobUnselected: {'identifier': 'isaac_ros_tensor_list_interfaces'}
+[0.000405] (-) JobUnselected: {'identifier': 'isaac_ros_test'}
+[0.000412] (-) JobUnselected: {'identifier': 'isaac_ros_test_cmake'}
+[0.000419] (-) JobUnselected: {'identifier': 'zed2i_isaac_vslam'}
+[0.000426] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.000436] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict()}
+[0.000447] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_components', '/workspaces/isaac_ros-dev/install/zed_components')])}
+[0.000457] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.005595] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.006279] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[0.006624] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/build/zed_components', '--', '-j20', '-l20'], 'cwd': '/workspaces/isaac_ros-dev/build/zed_components', 'env': OrderedDict([('DALI_BUILD', '16741769'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs:'), ('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('USER', 'jsthope'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('TF_ADJUST_SATURATION_FUSED', '1'), ('CUSOLVER_VERSION', '11.6.4.38'), ('HOSTNAME', 'ubuntu'), ('CUTENSOR_VERSION', '2.0.2.5'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/opt/hpcx/ucc/lib/:/opt/hpcx/ucx/lib/:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/tritonserver/lib'), ('HOME', '/root'), ('NVIDIA_TRITON_SERVER_VERSION', '24.08'), ('OLDPWD', '/workspaces/isaac_ros-dev/src'), ('HOST_USER_GID', '1000'), ('CUDA_CACHE_DISABLE', '1'), ('ROS_PYTHON_VERSION', '3'), ('MODEL_OPT_VERSION', '0.15.0'), ('ENV', '/etc/shinit_v2'), ('RDMACORE_VERSION', '39.0'), ('NVJPEG_VERSION', '12.3.3.23'), ('NVIDIA_BUILD_ID', '107631419'), ('CUDA_VERSION', '12.6.0.022'), ('TCMALLOC_RELEASE_RATE', '200'), ('CUBLAS_VERSION', '12.6.0.22'), ('NSIGHT_SYSTEMS_VERSION', '2024.4.2.133'), ('ROS_DISTRO', 'humble'), ('OPAL_PREFIX', '/opt/hpcx/ompi'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=9.0'), ('TRT_VERSION', '10.3.0.26+cuda12.5.1.007'), ('GDRCOPY_VERSION', '2.3.1-1'), ('_', '/usr/bin/colcon'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('POLYGRAPHY_VERSION', '0.49.13'), ('CURAND_VERSION', '10.3.7.37'), ('MOFED_VERSION', '5.4-rdmacore39.0'), ('USERNAME', 'admin'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('TRANSFORMER_ENGINE_VERSION', '1.9'), ('PATH', '/opt/tritonserver/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin'), ('HOST_USER_UID', '1000'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('CUDA_DRIVER_VERSION', '560.35.03'), ('_CUDA_COMPAT_STATUS', 'System has unsupported display driver / cuda driver combination (CUDA_ERROR_SYSTEM_DRIVER_MISMATCH) cuInit()=803'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'Triton Server'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NPP_VERSION', '12.3.1.23'), ('ROS_ROOT', '/opt/ros/humble'), ('UCX_MEM_EVENTS', 'no'), ('CUFFT_VERSION', '11.2.6.28'), ('TF_ENABLE_WINOGRAD_NONFUSED', '1'), ('CUDNN_VERSION', '9.3.0.75'), ('NSIGHT_COMPUTE_VERSION', '2024.3.0.15'), ('DALI_VERSION', '1.40.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('DCGM_VERSION', '3.2.6'), ('CUDNN_FRONTEND_VERSION', '1.5.2'), ('OPENMPI_VERSION', '4.1.7'), ('TRTOSS_VERSION', '24.08'), ('OMPI_MCA_coll_hcoll_enable', '0'), ('CUSPARSE_VERSION', '12.5.2.23'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', ''), ('TRITON_SERVER_GPU_ENABLED', '1'), ('TRITON_SERVER_VERSION', '2.49.0'), ('BASH_ENV', '/etc/bash.bashrc'), ('PWD', '/workspaces/isaac_ros-dev/build/zed_components'), ('CUSPARSELT_VERSION', '0.6.2.3'), ('PYTHONPATH', '/opt/tritonserver/backends/dali/wheel/dali:'), ('_CUDA_COMPAT_PATH', '/usr/local/cuda/compat'), ('TRITON_SERVER_USER', 'triton-server'), ('TF_ADJUST_HUE_FUSED', '1'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('NCCL_VERSION', '2.22.3'), ('COLCON', '1'), ('OPENUCX_VERSION', '1.17.0'), ('HPCX_VERSION', '2.19'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:'), ('TF_AUTOTUNE_THRESHOLD', '2'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[0.091524] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12") \n'}
+[0.099466] (-) TimerEvent: {}
+[0.199730] (-) TimerEvent: {}
+[0.288283] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "12.6") \n'}
+[0.289514] (zed_components) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.299806] (-) TimerEvent: {}
+[0.377893] (zed_components) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.378045] (zed_components) StderrLine: {'line': b'  File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>\n'}
+[0.378083] (zed_components) StderrLine: {'line': b'    from ament_package.templates import get_environment_hook_template_path\n'}
+[0.378108] (zed_components) StderrLine: {'line': b"ModuleNotFoundError: No module named 'ament_package'\n"}
+[0.379648] (zed_components) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):\n'}
+[0.379718] (zed_components) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.379747] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py\n'}
+[0.379771] (zed_components) StderrLine: {'line': b'  /workspaces/isaac_ros-dev/build/zed_components/ament_cmake_package_templates/templates.cmake)\n'}
+[0.379798] (zed_components) StderrLine: {'line': b'  returned error code 1\n'}
+[0.379823] (zed_components) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.379849] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)\n'}
+[0.379873] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)\n'}
+[0.379897] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)\n'}
+[0.379920] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_cmake_auto-extras.cmake:17 (find_package)\n'}
+[0.380128] (zed_components) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_auto/cmake/ament_cmake_autoConfig.cmake:41 (include)\n'}
+[0.380166] (zed_components) StderrLine: {'line': b'  CMakeLists.txt:118 (find_package)\n'}
+[0.380192] (zed_components) StderrLine: {'line': b'\n'}
+[0.380215] (zed_components) StderrLine: {'line': b'\x1b[0m\n'}
+[0.380237] (zed_components) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.380270] (zed_components) StdoutLine: {'line': b'See also "/workspaces/isaac_ros-dev/build/zed_components/CMakeFiles/CMakeOutput.log".\n'}
+[0.380295] (zed_components) StdoutLine: {'line': b'See also "/workspaces/isaac_ros-dev/build/zed_components/CMakeFiles/CMakeError.log".\n'}
+[0.383007] (zed_components) StderrLine: {'line': b'gmake: *** [Makefile:412: cmake_check_build_system] Error 1\n'}
+[0.384546] (zed_components) CommandEnded: {'returncode': 2}
+[0.399917] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 2}
+[0.400224] (-) TimerEvent: {}
+[0.410461] (zed_wrapper) JobSkipped: {'identifier': 'zed_wrapper'}
+[0.410539] (-) EventReactorShutdown: {}

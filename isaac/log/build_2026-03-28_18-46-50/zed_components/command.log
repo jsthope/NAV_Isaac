@@ -1,0 +1,2 @@
+Invoking command in '/workspaces/isaac_ros-dev/build/zed_components': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/build/zed_components -- -j20 -l20
+Invoked command in '/workspaces/isaac_ros-dev/build/zed_components' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /workspaces/isaac_ros-dev/build/zed_components -- -j20 -l20

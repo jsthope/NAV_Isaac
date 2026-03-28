@@ -1,0 +1,2 @@
+cd isaac/src/isaac_ros_common && ./scripts/run_dev.sh -i ros2_humble.zed -a "-v /usr/local/zed/settings:/usr/local/zed/settings \
+    -v /usr/local/zed/resources:/usr/local/zed/resources"

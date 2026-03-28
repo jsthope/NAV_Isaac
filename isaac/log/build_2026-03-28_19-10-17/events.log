@@ -1,0 +1,520 @@
+[0.000000] (-) TimerEvent: {}
+[0.000239] (-) JobUnselected: {'identifier': 'isaac_common'}
+[0.000263] (-) JobUnselected: {'identifier': 'isaac_common_py'}
+[0.000276] (-) JobUnselected: {'identifier': 'isaac_ros_apriltag_interfaces'}
+[0.000638] (-) JobUnselected: {'identifier': 'isaac_ros_bi3d_interfaces'}
+[0.000674] (-) JobUnselected: {'identifier': 'isaac_ros_common'}
+[0.000683] (-) JobUnselected: {'identifier': 'isaac_ros_launch_utils'}
+[0.000690] (-) JobUnselected: {'identifier': 'isaac_ros_nitros_bridge_interfaces'}
+[0.000699] (-) JobUnselected: {'identifier': 'isaac_ros_nova_interfaces'}
+[0.000706] (-) JobUnselected: {'identifier': 'isaac_ros_pointcloud_interfaces'}
+[0.000713] (-) JobUnselected: {'identifier': 'isaac_ros_r2b_galileo'}
+[0.000719] (-) JobUnselected: {'identifier': 'isaac_ros_rosbag_utils'}
+[0.000729] (-) JobUnselected: {'identifier': 'isaac_ros_tensor_list_interfaces'}
+[0.000736] (-) JobUnselected: {'identifier': 'isaac_ros_test'}
+[0.000742] (-) JobUnselected: {'identifier': 'isaac_ros_test_cmake'}
+[0.000749] (-) JobUnselected: {'identifier': 'zed2i_isaac_vslam'}
+[0.000757] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.000765] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict()}
+[0.000775] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_components', '/workspaces/isaac_ros-dev/install/zed_components')])}
+[0.000785] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.005069] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.005417] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[0.005799] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/build/zed_components', '--', '-j20', '-l20'], 'cwd': '/workspaces/isaac_ros-dev/build/zed_components', 'env': OrderedDict([('DALI_BUILD', '16741769'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs:'), ('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('USER', 'jsthope'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('TF_ADJUST_SATURATION_FUSED', '1'), ('CUSOLVER_VERSION', '11.6.4.38'), ('HOSTNAME', 'ubuntu'), ('CUTENSOR_VERSION', '2.0.2.5'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/opt/hpcx/ucc/lib/:/opt/hpcx/ucx/lib/:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/tritonserver/lib'), ('HOME', '/root'), ('NVIDIA_TRITON_SERVER_VERSION', '24.08'), ('OLDPWD', '/workspaces/isaac_ros-dev'), ('HOST_USER_GID', '1000'), ('CUDA_CACHE_DISABLE', '1'), ('ROS_PYTHON_VERSION', '3'), ('MODEL_OPT_VERSION', '0.15.0'), ('ENV', '/etc/shinit_v2'), ('RDMACORE_VERSION', '39.0'), ('NVJPEG_VERSION', '12.3.3.23'), ('NVIDIA_BUILD_ID', '107631419'), ('CUDA_VERSION', '12.6.0.022'), ('TCMALLOC_RELEASE_RATE', '200'), ('CUBLAS_VERSION', '12.6.0.22'), ('NSIGHT_SYSTEMS_VERSION', '2024.4.2.133'), ('ROS_DISTRO', 'humble'), ('OPAL_PREFIX', '/opt/hpcx/ompi'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=9.0'), ('TRT_VERSION', '10.3.0.26+cuda12.5.1.007'), ('GDRCOPY_VERSION', '2.3.1-1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('POLYGRAPHY_VERSION', '0.49.13'), ('CURAND_VERSION', '10.3.7.37'), ('MOFED_VERSION', '5.4-rdmacore39.0'), ('USERNAME', 'admin'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('ROS_LOCALHOST_ONLY', '0'), ('TRANSFORMER_ENGINE_VERSION', '1.9'), ('PATH', '/opt/ros/humble/bin:/opt/tritonserver/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin'), ('HOST_USER_UID', '1000'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('CUDA_DRIVER_VERSION', '560.35.03'), ('_CUDA_COMPAT_STATUS', 'System has unsupported display driver / cuda driver combination (CUDA_ERROR_SYSTEM_DRIVER_MISMATCH) cuInit()=803'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'Triton Server'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NPP_VERSION', '12.3.1.23'), ('ROS_ROOT', '/opt/ros/humble'), ('UCX_MEM_EVENTS', 'no'), ('CUFFT_VERSION', '11.2.6.28'), ('TF_ENABLE_WINOGRAD_NONFUSED', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CUDNN_VERSION', '9.3.0.75'), ('NSIGHT_COMPUTE_VERSION', '2024.3.0.15'), ('DALI_VERSION', '1.40.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('DCGM_VERSION', '3.2.6'), ('CUDNN_FRONTEND_VERSION', '1.5.2'), ('OPENMPI_VERSION', '4.1.7'), ('TRTOSS_VERSION', '24.08'), ('OMPI_MCA_coll_hcoll_enable', '0'), ('CUSPARSE_VERSION', '12.5.2.23'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', ''), ('TRITON_SERVER_GPU_ENABLED', '1'), ('TRITON_SERVER_VERSION', '2.49.0'), ('BASH_ENV', '/etc/bash.bashrc'), ('PWD', '/workspaces/isaac_ros-dev/build/zed_components'), ('CUSPARSELT_VERSION', '0.6.2.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/tritonserver/backends/dali/wheel/dali:'), ('_CUDA_COMPAT_PATH', '/usr/local/cuda/compat'), ('TRITON_SERVER_USER', 'triton-server'), ('TF_ADJUST_HUE_FUSED', '1'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('NCCL_VERSION', '2.22.3'), ('COLCON', '1'), ('OPENUCX_VERSION', '1.17.0'), ('HPCX_VERSION', '2.19'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TF_AUTOTUNE_THRESHOLD', '2'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[0.056469] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12") \n'}
+[0.097248] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda (found version "12.6") \n'}
+[0.098112] (zed_components) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.14 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.099573] (-) TimerEvent: {}
+[0.194962] (zed_components) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.199663] (-) TimerEvent: {}
+[0.282355] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.284613] (zed_components) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.291098] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.299983] (-) TimerEvent: {}
+[0.301945] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.317179] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.398049] (zed_components) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.399475] (zed_components) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400043] (-) TimerEvent: {}
+[0.500264] (-) TimerEvent: {}
+[0.507248] (zed_components) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600456] (-) TimerEvent: {}
+[0.681424] (zed_components) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.682257] (zed_components) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.700542] (-) TimerEvent: {}
+[0.765200] (zed_components) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.786282] (zed_components) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.787321] (zed_components) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.787694] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/include;/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/tools/include\n'}
+[0.787895] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.788187] (zed_components) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.789361] (zed_components) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.789455] (zed_components) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.789649] (zed_components) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.792931] (zed_components) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.800639] (-) TimerEvent: {}
+[0.817484] (zed_components) StdoutLine: {'line': b'-- Generating done\n'}
+[0.823952] (zed_components) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/isaac_ros-dev/build/zed_components\n'}
+[0.850502] (zed_components) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target zed_camera_one_component\x1b[0m\n'}
+[0.850677] (zed_components) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target zed_camera_component\x1b[0m\n'}
+[0.869027] (zed_components) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[0.869593] (zed_components) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[0.870586] (zed_components) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o\x1b[0m\n'}
+[0.870793] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[0.871055] (zed_components) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[0.871520] (zed_components) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/zed_camera/src/zed_camera_one_component.cpp.o\x1b[0m\n'}
+[0.900793] (-) TimerEvent: {}
+[1.001137] (-) TimerEvent: {}
+[1.101467] (-) TimerEvent: {}
+[1.201795] (-) TimerEvent: {}
+[1.302203] (-) TimerEvent: {}
+[1.402534] (-) TimerEvent: {}
+[1.502876] (-) TimerEvent: {}
+[1.603310] (-) TimerEvent: {}
+[1.703667] (-) TimerEvent: {}
+[1.803991] (-) TimerEvent: {}
+[1.904343] (-) TimerEvent: {}
+[2.004685] (-) TimerEvent: {}
+[2.105008] (-) TimerEvent: {}
+[2.205460] (-) TimerEvent: {}
+[2.305828] (-) TimerEvent: {}
+[2.406219] (-) TimerEvent: {}
+[2.506538] (-) TimerEvent: {}
+[2.606857] (-) TimerEvent: {}
+[2.707160] (-) TimerEvent: {}
+[2.807562] (-) TimerEvent: {}
+[2.907856] (-) TimerEvent: {}
+[3.008217] (-) TimerEvent: {}
+[3.108602] (-) TimerEvent: {}
+[3.208991] (-) TimerEvent: {}
+[3.309363] (-) TimerEvent: {}
+[3.409824] (-) TimerEvent: {}
+[3.510235] (-) TimerEvent: {}
+[3.610527] (-) TimerEvent: {}
+[3.710830] (-) TimerEvent: {}
+[3.811191] (-) TimerEvent: {}
+[3.911453] (-) TimerEvent: {}
+[4.011840] (-) TimerEvent: {}
+[4.112367] (-) TimerEvent: {}
+[4.212663] (-) TimerEvent: {}
+[4.313072] (-) TimerEvent: {}
+[4.413447] (-) TimerEvent: {}
+[4.513751] (-) TimerEvent: {}
+[4.614192] (-) TimerEvent: {}
+[4.714609] (-) TimerEvent: {}
+[4.814907] (-) TimerEvent: {}
+[4.915302] (-) TimerEvent: {}
+[5.015700] (-) TimerEvent: {}
+[5.116076] (-) TimerEvent: {}
+[5.216460] (-) TimerEvent: {}
+[5.316836] (-) TimerEvent: {}
+[5.417207] (-) TimerEvent: {}
+[5.517557] (-) TimerEvent: {}
+[5.617942] (-) TimerEvent: {}
+[5.718379] (-) TimerEvent: {}
+[5.818688] (-) TimerEvent: {}
+[5.919018] (-) TimerEvent: {}
+[6.019450] (-) TimerEvent: {}
+[6.119728] (-) TimerEvent: {}
+[6.220114] (-) TimerEvent: {}
+[6.320464] (-) TimerEvent: {}
+[6.420809] (-) TimerEvent: {}
+[6.521195] (-) TimerEvent: {}
+[6.621574] (-) TimerEvent: {}
+[6.721937] (-) TimerEvent: {}
+[6.822324] (-) TimerEvent: {}
+[6.922622] (-) TimerEvent: {}
+[7.022961] (-) TimerEvent: {}
+[7.123411] (-) TimerEvent: {}
+[7.223761] (-) TimerEvent: {}
+[7.324116] (-) TimerEvent: {}
+[7.424565] (-) TimerEvent: {}
+[7.524841] (-) TimerEvent: {}
+[7.625231] (-) TimerEvent: {}
+[7.725607] (-) TimerEvent: {}
+[7.825991] (-) TimerEvent: {}
+[7.926263] (-) TimerEvent: {}
+[8.026616] (-) TimerEvent: {}
+[8.126992] (-) TimerEvent: {}
+[8.227341] (-) TimerEvent: {}
+[8.327732] (-) TimerEvent: {}
+[8.428096] (-) TimerEvent: {}
+[8.528476] (-) TimerEvent: {}
+[8.628813] (-) TimerEvent: {}
+[8.729185] (-) TimerEvent: {}
+[8.829556] (-) TimerEvent: {}
+[8.929931] (-) TimerEvent: {}
+[9.030262] (-) TimerEvent: {}
+[9.130651] (-) TimerEvent: {}
+[9.231030] (-) TimerEvent: {}
+[9.331397] (-) TimerEvent: {}
+[9.431769] (-) TimerEvent: {}
+[9.532134] (-) TimerEvent: {}
+[9.632439] (-) TimerEvent: {}
+[9.732802] (-) TimerEvent: {}
+[9.833065] (-) TimerEvent: {}
+[9.933381] (-) TimerEvent: {}
+[10.033763] (-) TimerEvent: {}
+[10.134140] (-) TimerEvent: {}
+[10.234516] (-) TimerEvent: {}
+[10.334879] (-) TimerEvent: {}
+[10.435248] (-) TimerEvent: {}
+[10.535604] (-) TimerEvent: {}
+[10.635962] (-) TimerEvent: {}
+[10.736322] (-) TimerEvent: {}
+[10.836706] (-) TimerEvent: {}
+[10.937064] (-) TimerEvent: {}
+[11.037426] (-) TimerEvent: {}
+[11.137803] (-) TimerEvent: {}
+[11.238155] (-) TimerEvent: {}
+[11.338437] (-) TimerEvent: {}
+[11.438723] (-) TimerEvent: {}
+[11.539087] (-) TimerEvent: {}
+[11.639468] (-) TimerEvent: {}
+[11.739839] (-) TimerEvent: {}
+[11.750864] (zed_components) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_one_component.so\x1b[0m\n'}
+[11.840006] (-) TimerEvent: {}
+[11.940240] (-) TimerEvent: {}
+[12.040476] (-) TimerEvent: {}
+[12.042868] (zed_components) StdoutLine: {'line': b'[ 80%] Built target zed_camera_one_component\n'}
+[12.140628] (-) TimerEvent: {}
+[12.240991] (-) TimerEvent: {}
+[12.341369] (-) TimerEvent: {}
+[12.441895] (-) TimerEvent: {}
+[12.542237] (-) TimerEvent: {}
+[12.642582] (-) TimerEvent: {}
+[12.742890] (-) TimerEvent: {}
+[12.843226] (-) TimerEvent: {}
+[12.943482] (-) TimerEvent: {}
+[13.043782] (-) TimerEvent: {}
+[13.144114] (-) TimerEvent: {}
+[13.244439] (-) TimerEvent: {}
+[13.344750] (-) TimerEvent: {}
+[13.445058] (-) TimerEvent: {}
+[13.545314] (-) TimerEvent: {}
+[13.645614] (-) TimerEvent: {}
+[13.745925] (-) TimerEvent: {}
+[13.846247] (-) TimerEvent: {}
+[13.946684] (-) TimerEvent: {}
+[14.046986] (-) TimerEvent: {}
+[14.147330] (-) TimerEvent: {}
+[14.247581] (-) TimerEvent: {}
+[14.347833] (-) TimerEvent: {}
+[14.448131] (-) TimerEvent: {}
+[14.548435] (-) TimerEvent: {}
+[14.648763] (-) TimerEvent: {}
+[14.749094] (-) TimerEvent: {}
+[14.849457] (-) TimerEvent: {}
+[14.949764] (-) TimerEvent: {}
+[15.050073] (-) TimerEvent: {}
+[15.150359] (-) TimerEvent: {}
+[15.250602] (-) TimerEvent: {}
+[15.350912] (-) TimerEvent: {}
+[15.451206] (-) TimerEvent: {}
+[15.551511] (-) TimerEvent: {}
+[15.651863] (-) TimerEvent: {}
+[15.752198] (-) TimerEvent: {}
+[15.852530] (-) TimerEvent: {}
+[15.952836] (-) TimerEvent: {}
+[16.053152] (-) TimerEvent: {}
+[16.153490] (-) TimerEvent: {}
+[16.253802] (-) TimerEvent: {}
+[16.354131] (-) TimerEvent: {}
+[16.454443] (-) TimerEvent: {}
+[16.554747] (-) TimerEvent: {}
+[16.655066] (-) TimerEvent: {}
+[16.755311] (-) TimerEvent: {}
+[16.855604] (-) TimerEvent: {}
+[16.955891] (-) TimerEvent: {}
+[17.056187] (-) TimerEvent: {}
+[17.156396] (-) TimerEvent: {}
+[17.256696] (-) TimerEvent: {}
+[17.357028] (-) TimerEvent: {}
+[17.457376] (-) TimerEvent: {}
+[17.557601] (-) TimerEvent: {}
+[17.657913] (-) TimerEvent: {}
+[17.758247] (-) TimerEvent: {}
+[17.858560] (-) TimerEvent: {}
+[17.958894] (-) TimerEvent: {}
+[18.059224] (-) TimerEvent: {}
+[18.159471] (-) TimerEvent: {}
+[18.259772] (-) TimerEvent: {}
+[18.360031] (-) TimerEvent: {}
+[18.460285] (-) TimerEvent: {}
+[18.560504] (-) TimerEvent: {}
+[18.660739] (-) TimerEvent: {}
+[18.761045] (-) TimerEvent: {}
+[18.861357] (-) TimerEvent: {}
+[18.961574] (-) TimerEvent: {}
+[19.061881] (-) TimerEvent: {}
+[19.162216] (-) TimerEvent: {}
+[19.262541] (-) TimerEvent: {}
+[19.362838] (-) TimerEvent: {}
+[19.463095] (-) TimerEvent: {}
+[19.563398] (-) TimerEvent: {}
+[19.663607] (-) TimerEvent: {}
+[19.763904] (-) TimerEvent: {}
+[19.864205] (-) TimerEvent: {}
+[19.964417] (-) TimerEvent: {}
+[20.064738] (-) TimerEvent: {}
+[20.165053] (-) TimerEvent: {}
+[20.265367] (-) TimerEvent: {}
+[20.365665] (-) TimerEvent: {}
+[20.465987] (-) TimerEvent: {}
+[20.566315] (-) TimerEvent: {}
+[20.666740] (-) TimerEvent: {}
+[20.767046] (-) TimerEvent: {}
+[20.867361] (-) TimerEvent: {}
+[20.967668] (-) TimerEvent: {}
+[21.067950] (-) TimerEvent: {}
+[21.168243] (-) TimerEvent: {}
+[21.268576] (-) TimerEvent: {}
+[21.368904] (-) TimerEvent: {}
+[21.469221] (-) TimerEvent: {}
+[21.569515] (-) TimerEvent: {}
+[21.669834] (-) TimerEvent: {}
+[21.770167] (-) TimerEvent: {}
+[21.870520] (-) TimerEvent: {}
+[21.970760] (-) TimerEvent: {}
+[22.071029] (-) TimerEvent: {}
+[22.171327] (-) TimerEvent: {}
+[22.271615] (-) TimerEvent: {}
+[22.371856] (-) TimerEvent: {}
+[22.472112] (-) TimerEvent: {}
+[22.572393] (-) TimerEvent: {}
+[22.672722] (-) TimerEvent: {}
+[22.773032] (-) TimerEvent: {}
+[22.873360] (-) TimerEvent: {}
+[22.973693] (-) TimerEvent: {}
+[23.074052] (-) TimerEvent: {}
+[23.174386] (-) TimerEvent: {}
+[23.274686] (-) TimerEvent: {}
+[23.375000] (-) TimerEvent: {}
+[23.475240] (-) TimerEvent: {}
+[23.575494] (-) TimerEvent: {}
+[23.675725] (-) TimerEvent: {}
+[23.776032] (-) TimerEvent: {}
+[23.876337] (-) TimerEvent: {}
+[23.976632] (-) TimerEvent: {}
+[24.076879] (-) TimerEvent: {}
+[24.177214] (-) TimerEvent: {}
+[24.277459] (-) TimerEvent: {}
+[24.377704] (-) TimerEvent: {}
+[24.477979] (-) TimerEvent: {}
+[24.578259] (-) TimerEvent: {}
+[24.678560] (-) TimerEvent: {}
+[24.778852] (-) TimerEvent: {}
+[24.879137] (-) TimerEvent: {}
+[24.979437] (-) TimerEvent: {}
+[25.079682] (-) TimerEvent: {}
+[25.179916] (-) TimerEvent: {}
+[25.280151] (-) TimerEvent: {}
+[25.380390] (-) TimerEvent: {}
+[25.480620] (-) TimerEvent: {}
+[25.580885] (-) TimerEvent: {}
+[25.681151] (-) TimerEvent: {}
+[25.781452] (-) TimerEvent: {}
+[25.881784] (-) TimerEvent: {}
+[25.982037] (-) TimerEvent: {}
+[26.082309] (-) TimerEvent: {}
+[26.182742] (-) TimerEvent: {}
+[26.282976] (-) TimerEvent: {}
+[26.383293] (-) TimerEvent: {}
+[26.483537] (-) TimerEvent: {}
+[26.583795] (-) TimerEvent: {}
+[26.684116] (-) TimerEvent: {}
+[26.784466] (-) TimerEvent: {}
+[26.884764] (-) TimerEvent: {}
+[26.985064] (-) TimerEvent: {}
+[27.085408] (-) TimerEvent: {}
+[27.185741] (-) TimerEvent: {}
+[27.286035] (-) TimerEvent: {}
+[27.386351] (-) TimerEvent: {}
+[27.486585] (-) TimerEvent: {}
+[27.586905] (-) TimerEvent: {}
+[27.687228] (-) TimerEvent: {}
+[27.787714] (-) TimerEvent: {}
+[27.888045] (-) TimerEvent: {}
+[27.988310] (-) TimerEvent: {}
+[28.088596] (-) TimerEvent: {}
+[28.188845] (-) TimerEvent: {}
+[28.289163] (-) TimerEvent: {}
+[28.389476] (-) TimerEvent: {}
+[28.489800] (-) TimerEvent: {}
+[28.590106] (-) TimerEvent: {}
+[28.690424] (-) TimerEvent: {}
+[28.790632] (-) TimerEvent: {}
+[28.890931] (-) TimerEvent: {}
+[28.991195] (-) TimerEvent: {}
+[29.091524] (-) TimerEvent: {}
+[29.191776] (-) TimerEvent: {}
+[29.292062] (-) TimerEvent: {}
+[29.392342] (-) TimerEvent: {}
+[29.492663] (-) TimerEvent: {}
+[29.592963] (-) TimerEvent: {}
+[29.693294] (-) TimerEvent: {}
+[29.793583] (-) TimerEvent: {}
+[29.893815] (-) TimerEvent: {}
+[29.994112] (-) TimerEvent: {}
+[30.094423] (-) TimerEvent: {}
+[30.194742] (-) TimerEvent: {}
+[30.295063] (-) TimerEvent: {}
+[30.395392] (-) TimerEvent: {}
+[30.495707] (-) TimerEvent: {}
+[30.596008] (-) TimerEvent: {}
+[30.696341] (-) TimerEvent: {}
+[30.796684] (-) TimerEvent: {}
+[30.897041] (-) TimerEvent: {}
+[30.997343] (-) TimerEvent: {}
+[31.097640] (-) TimerEvent: {}
+[31.197952] (-) TimerEvent: {}
+[31.298254] (-) TimerEvent: {}
+[31.398578] (-) TimerEvent: {}
+[31.498891] (-) TimerEvent: {}
+[31.599208] (-) TimerEvent: {}
+[31.699537] (-) TimerEvent: {}
+[31.799853] (-) TimerEvent: {}
+[31.900174] (-) TimerEvent: {}
+[32.000422] (-) TimerEvent: {}
+[32.100643] (-) TimerEvent: {}
+[32.200899] (-) TimerEvent: {}
+[32.301134] (-) TimerEvent: {}
+[32.401401] (-) TimerEvent: {}
+[32.501701] (-) TimerEvent: {}
+[32.602038] (-) TimerEvent: {}
+[32.702472] (-) TimerEvent: {}
+[32.802808] (-) TimerEvent: {}
+[32.903154] (-) TimerEvent: {}
+[33.003420] (-) TimerEvent: {}
+[33.103668] (-) TimerEvent: {}
+[33.204022] (-) TimerEvent: {}
+[33.304261] (-) TimerEvent: {}
+[33.404564] (-) TimerEvent: {}
+[33.504804] (-) TimerEvent: {}
+[33.605099] (-) TimerEvent: {}
+[33.705411] (-) TimerEvent: {}
+[33.805742] (-) TimerEvent: {}
+[33.906072] (-) TimerEvent: {}
+[34.006487] (-) TimerEvent: {}
+[34.106840] (-) TimerEvent: {}
+[34.207190] (-) TimerEvent: {}
+[34.307493] (-) TimerEvent: {}
+[34.407794] (-) TimerEvent: {}
+[34.508234] (-) TimerEvent: {}
+[34.608652] (-) TimerEvent: {}
+[34.708974] (-) TimerEvent: {}
+[34.809294] (-) TimerEvent: {}
+[34.909602] (-) TimerEvent: {}
+[35.009947] (-) TimerEvent: {}
+[35.110326] (-) TimerEvent: {}
+[35.210662] (-) TimerEvent: {}
+[35.311009] (-) TimerEvent: {}
+[35.411335] (-) TimerEvent: {}
+[35.511697] (-) TimerEvent: {}
+[35.612019] (-) TimerEvent: {}
+[35.712325] (-) TimerEvent: {}
+[35.812551] (-) TimerEvent: {}
+[35.912890] (-) TimerEvent: {}
+[36.013201] (-) TimerEvent: {}
+[36.113528] (-) TimerEvent: {}
+[36.213840] (-) TimerEvent: {}
+[36.314152] (-) TimerEvent: {}
+[36.414442] (-) TimerEvent: {}
+[36.514751] (-) TimerEvent: {}
+[36.615105] (-) TimerEvent: {}
+[36.715534] (-) TimerEvent: {}
+[36.815816] (-) TimerEvent: {}
+[36.916143] (-) TimerEvent: {}
+[37.016520] (-) TimerEvent: {}
+[37.116803] (-) TimerEvent: {}
+[37.187781] (zed_components) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_component.so\x1b[0m\n'}
+[37.216980] (-) TimerEvent: {}
+[37.317314] (-) TimerEvent: {}
+[37.417710] (-) TimerEvent: {}
+[37.506941] (zed_components) StdoutLine: {'line': b'[100%] Built target zed_camera_component\n'}
+[37.514194] (zed_components) CommandEnded: {'returncode': 0}
+[37.514739] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'install'}
+[37.517771] (-) TimerEvent: {}
+[37.522833] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/build/zed_components'], 'cwd': '/workspaces/isaac_ros-dev/build/zed_components', 'env': OrderedDict([('DALI_BUILD', '16741769'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs:'), ('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('USER', 'jsthope'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('TF_ADJUST_SATURATION_FUSED', '1'), ('CUSOLVER_VERSION', '11.6.4.38'), ('HOSTNAME', 'ubuntu'), ('CUTENSOR_VERSION', '2.0.2.5'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/opt/hpcx/ucc/lib/:/opt/hpcx/ucx/lib/:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/tritonserver/lib'), ('HOME', '/root'), ('NVIDIA_TRITON_SERVER_VERSION', '24.08'), ('OLDPWD', '/workspaces/isaac_ros-dev'), ('HOST_USER_GID', '1000'), ('CUDA_CACHE_DISABLE', '1'), ('ROS_PYTHON_VERSION', '3'), ('MODEL_OPT_VERSION', '0.15.0'), ('ENV', '/etc/shinit_v2'), ('RDMACORE_VERSION', '39.0'), ('NVJPEG_VERSION', '12.3.3.23'), ('NVIDIA_BUILD_ID', '107631419'), ('CUDA_VERSION', '12.6.0.022'), ('TCMALLOC_RELEASE_RATE', '200'), ('CUBLAS_VERSION', '12.6.0.22'), ('NSIGHT_SYSTEMS_VERSION', '2024.4.2.133'), ('ROS_DISTRO', 'humble'), ('OPAL_PREFIX', '/opt/hpcx/ompi'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=9.0'), ('TRT_VERSION', '10.3.0.26+cuda12.5.1.007'), ('GDRCOPY_VERSION', '2.3.1-1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('POLYGRAPHY_VERSION', '0.49.13'), ('CURAND_VERSION', '10.3.7.37'), ('MOFED_VERSION', '5.4-rdmacore39.0'), ('USERNAME', 'admin'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('ROS_LOCALHOST_ONLY', '0'), ('TRANSFORMER_ENGINE_VERSION', '1.9'), ('PATH', '/opt/ros/humble/bin:/opt/tritonserver/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin'), ('HOST_USER_UID', '1000'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('CUDA_DRIVER_VERSION', '560.35.03'), ('_CUDA_COMPAT_STATUS', 'System has unsupported display driver / cuda driver combination (CUDA_ERROR_SYSTEM_DRIVER_MISMATCH) cuInit()=803'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'Triton Server'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NPP_VERSION', '12.3.1.23'), ('ROS_ROOT', '/opt/ros/humble'), ('UCX_MEM_EVENTS', 'no'), ('CUFFT_VERSION', '11.2.6.28'), ('TF_ENABLE_WINOGRAD_NONFUSED', '1'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CUDNN_VERSION', '9.3.0.75'), ('NSIGHT_COMPUTE_VERSION', '2024.3.0.15'), ('DALI_VERSION', '1.40.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('DCGM_VERSION', '3.2.6'), ('CUDNN_FRONTEND_VERSION', '1.5.2'), ('OPENMPI_VERSION', '4.1.7'), ('TRTOSS_VERSION', '24.08'), ('OMPI_MCA_coll_hcoll_enable', '0'), ('CUSPARSE_VERSION', '12.5.2.23'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', ''), ('TRITON_SERVER_GPU_ENABLED', '1'), ('TRITON_SERVER_VERSION', '2.49.0'), ('BASH_ENV', '/etc/bash.bashrc'), ('PWD', '/workspaces/isaac_ros-dev/build/zed_components'), ('CUSPARSELT_VERSION', '0.6.2.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/tritonserver/backends/dali/wheel/dali:'), ('_CUDA_COMPAT_PATH', '/usr/local/cuda/compat'), ('TRITON_SERVER_USER', 'triton-server'), ('TF_ADJUST_HUE_FUSED', '1'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('NCCL_VERSION', '2.22.3'), ('COLCON', '1'), ('OPENUCX_VERSION', '1.17.0'), ('HPCX_VERSION', '2.19'), ('CMAKE_PREFIX_PATH', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive::/opt/ros/humble'), ('TF_AUTOTUNE_THRESHOLD', '2'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[37.533505] (zed_components) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[37.533960] (zed_components) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.534205] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/lib/libzed_camera_component.so\n'}
+[37.534329] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/lib/libzed_camera_one_component.so\n'}
+[37.534633] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//cost_traversability.hpp\n'}
+[37.534724] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//sl_types.hpp\n'}
+[37.534832] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//zed_camera_component.hpp\n'}
+[37.534894] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//zed_camera_one_component.hpp\n'}
+[37.535298] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//gnss_replay.hpp\n'}
+[37.535349] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//json.hpp\n'}
+[37.535399] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//sl_logging.hpp\n'}
+[37.535810] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//sl_tools.hpp\n'}
+[37.535906] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//sl_win_avg.hpp\n'}
+[37.536003] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/include/zed_components//visibility_control.hpp\n'}
+[37.536075] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/library_path.sh\n'}
+[37.536141] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/library_path.dsv\n'}
+[37.536197] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components\n'}
+[37.536252] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components\n'}
+[37.536331] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/ament_prefix_path.sh\n'}
+[37.536517] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv\n'}
+[37.536606] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/path.sh\n'}
+[37.536679] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/environment/path.dsv\n'}
+[37.536748] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/local_setup.bash\n'}
+[37.536804] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/local_setup.sh\n'}
+[37.536870] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/local_setup.zsh\n'}
+[37.536967] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/local_setup.dsv\n'}
+[37.537025] (zed_components) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/package.dsv\n'}
+[37.543122] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/ament_index/resource_index/packages/zed_components\n'}
+[37.543313] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components\n'}
+[37.543418] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[37.543541] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[37.543621] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[37.543697] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake\n'}
+[37.543787] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake\n'}
+[37.543866] (zed_components) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_components/share/zed_components/package.xml\n'}
+[37.545175] (zed_components) CommandEnded: {'returncode': 0}
+[37.561978] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 0}
+[37.562712] (zed_wrapper) JobStarted: {'identifier': 'zed_wrapper'}
+[37.569682] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'cmake'}
+[37.571124] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'build'}
+[37.571649] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/isaac_ros-dev/build/zed_wrapper', '--', '-j20', '-l20'], 'cwd': '/workspaces/isaac_ros-dev/build/zed_wrapper', 'env': OrderedDict([('DALI_BUILD', '16741769'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs:'), ('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('USER', 'jsthope'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('TF_ADJUST_SATURATION_FUSED', '1'), ('CUSOLVER_VERSION', '11.6.4.38'), ('HOSTNAME', 'ubuntu'), ('CUTENSOR_VERSION', '2.0.2.5'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/opt/hpcx/ucc/lib/:/opt/hpcx/ucx/lib/:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/tritonserver/lib'), ('HOME', '/root'), ('NVIDIA_TRITON_SERVER_VERSION', '24.08'), ('OLDPWD', '/workspaces/isaac_ros-dev'), ('HOST_USER_GID', '1000'), ('CUDA_CACHE_DISABLE', '1'), ('ROS_PYTHON_VERSION', '3'), ('MODEL_OPT_VERSION', '0.15.0'), ('ENV', '/etc/shinit_v2'), ('RDMACORE_VERSION', '39.0'), ('NVJPEG_VERSION', '12.3.3.23'), ('NVIDIA_BUILD_ID', '107631419'), ('CUDA_VERSION', '12.6.0.022'), ('TCMALLOC_RELEASE_RATE', '200'), ('CUBLAS_VERSION', '12.6.0.22'), ('NSIGHT_SYSTEMS_VERSION', '2024.4.2.133'), ('ROS_DISTRO', 'humble'), ('OPAL_PREFIX', '/opt/hpcx/ompi'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=9.0'), ('TRT_VERSION', '10.3.0.26+cuda12.5.1.007'), ('GDRCOPY_VERSION', '2.3.1-1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('POLYGRAPHY_VERSION', '0.49.13'), ('CURAND_VERSION', '10.3.7.37'), ('MOFED_VERSION', '5.4-rdmacore39.0'), ('USERNAME', 'admin'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('ROS_LOCALHOST_ONLY', '0'), ('TRANSFORMER_ENGINE_VERSION', '1.9'), ('PATH', '/opt/ros/humble/bin:/opt/tritonserver/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin'), ('HOST_USER_UID', '1000'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('CUDA_DRIVER_VERSION', '560.35.03'), ('_CUDA_COMPAT_STATUS', 'System has unsupported display driver / cuda driver combination (CUDA_ERROR_SYSTEM_DRIVER_MISMATCH) cuInit()=803'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'Triton Server'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NPP_VERSION', '12.3.1.23'), ('ROS_ROOT', '/opt/ros/humble'), ('UCX_MEM_EVENTS', 'no'), ('CUFFT_VERSION', '11.2.6.28'), ('TF_ENABLE_WINOGRAD_NONFUSED', '1'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/install/zed_components:/opt/ros/humble'), ('CUDNN_VERSION', '9.3.0.75'), ('NSIGHT_COMPUTE_VERSION', '2024.3.0.15'), ('DALI_VERSION', '1.40.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('DCGM_VERSION', '3.2.6'), ('CUDNN_FRONTEND_VERSION', '1.5.2'), ('OPENMPI_VERSION', '4.1.7'), ('TRTOSS_VERSION', '24.08'), ('OMPI_MCA_coll_hcoll_enable', '0'), ('CUSPARSE_VERSION', '12.5.2.23'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', ''), ('TRITON_SERVER_GPU_ENABLED', '1'), ('TRITON_SERVER_VERSION', '2.49.0'), ('BASH_ENV', '/etc/bash.bashrc'), ('PWD', '/workspaces/isaac_ros-dev/build/zed_wrapper'), ('CUSPARSELT_VERSION', '0.6.2.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/tritonserver/backends/dali/wheel/dali:'), ('_CUDA_COMPAT_PATH', '/usr/local/cuda/compat'), ('TRITON_SERVER_USER', 'triton-server'), ('TF_ADJUST_HUE_FUSED', '1'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('NCCL_VERSION', '2.22.3'), ('COLCON', '1'), ('OPENUCX_VERSION', '1.17.0'), ('HPCX_VERSION', '2.19'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/install/zed_components:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble'), ('TF_AUTOTUNE_THRESHOLD', '2'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[37.617967] (-) TimerEvent: {}
+[37.642744] (zed_wrapper) CommandEnded: {'returncode': 0}
+[37.643706] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'install'}
+[37.644518] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/isaac_ros-dev/build/zed_wrapper'], 'cwd': '/workspaces/isaac_ros-dev/build/zed_wrapper', 'env': OrderedDict([('DALI_BUILD', '16741769'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs:'), ('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('PYTHONWARNINGS', 'ignore:::setuptools.command.install,ignore:::setuptools.command.easy_install,ignore:::pkg_resources,ignore:::setuptools.command.develop'), ('USER', 'jsthope'), ('TRT_INC_PATH', '/usr/include/x86_64-linux-gnu'), ('TF_ADJUST_SATURATION_FUSED', '1'), ('CUSOLVER_VERSION', '11.6.4.38'), ('HOSTNAME', 'ubuntu'), ('CUTENSOR_VERSION', '2.0.2.5'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspaces/isaac_ros-dev/install/zed_components/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive/lib:/opt/hpcx/ucc/lib/:/opt/hpcx/ucx/lib/:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/tritonserver/lib'), ('HOME', '/root'), ('NVIDIA_TRITON_SERVER_VERSION', '24.08'), ('OLDPWD', '/workspaces/isaac_ros-dev'), ('HOST_USER_GID', '1000'), ('CUDA_CACHE_DISABLE', '1'), ('ROS_PYTHON_VERSION', '3'), ('MODEL_OPT_VERSION', '0.15.0'), ('ENV', '/etc/shinit_v2'), ('RDMACORE_VERSION', '39.0'), ('NVJPEG_VERSION', '12.3.3.23'), ('NVIDIA_BUILD_ID', '107631419'), ('CUDA_VERSION', '12.6.0.022'), ('TCMALLOC_RELEASE_RATE', '200'), ('CUBLAS_VERSION', '12.6.0.22'), ('NSIGHT_SYSTEMS_VERSION', '2024.4.2.133'), ('ROS_DISTRO', 'humble'), ('OPAL_PREFIX', '/opt/hpcx/ompi'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=9.0'), ('TRT_VERSION', '10.3.0.26+cuda12.5.1.007'), ('GDRCOPY_VERSION', '2.3.1-1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('POLYGRAPHY_VERSION', '0.49.13'), ('CURAND_VERSION', '10.3.7.37'), ('MOFED_VERSION', '5.4-rdmacore39.0'), ('USERNAME', 'admin'), ('TERM', 'xterm'), ('ISAAC_ROS_WS', '/workspaces/isaac_ros-dev'), ('ROS_LOCALHOST_ONLY', '0'), ('TRANSFORMER_ENGINE_VERSION', '1.9'), ('PATH', '/opt/ros/humble/bin:/opt/tritonserver/bin:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/ucx/bin'), ('HOST_USER_UID', '1000'), ('CUDSS_DIR', '/usr/local/libcudss-linux-0.3.0.9_cuda12-archive'), ('CUDA_DRIVER_VERSION', '560.35.03'), ('_CUDA_COMPAT_STATUS', 'System has unsupported display driver / cuda driver combination (CUDA_ERROR_SYSTEM_DRIVER_MISMATCH) cuInit()=803'), ('DISPLAY', ':1'), ('NVIDIA_PRODUCT_NAME', 'Triton Server'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('NPP_VERSION', '12.3.1.23'), ('ROS_ROOT', '/opt/ros/humble'), ('UCX_MEM_EVENTS', 'no'), ('CUFFT_VERSION', '11.2.6.28'), ('TF_ENABLE_WINOGRAD_NONFUSED', '1'), ('AMENT_PREFIX_PATH', '/workspaces/isaac_ros-dev/install/zed_components:/opt/ros/humble'), ('CUDNN_VERSION', '9.3.0.75'), ('NSIGHT_COMPUTE_VERSION', '2024.3.0.15'), ('DALI_VERSION', '1.40.0'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('DCGM_VERSION', '3.2.6'), ('CUDNN_FRONTEND_VERSION', '1.5.2'), ('OPENMPI_VERSION', '4.1.7'), ('TRTOSS_VERSION', '24.08'), ('OMPI_MCA_coll_hcoll_enable', '0'), ('CUSPARSE_VERSION', '12.5.2.23'), ('NVIDIA_REQUIRE_JETPACK_HOST_MOUNTS', ''), ('TRITON_SERVER_GPU_ENABLED', '1'), ('TRITON_SERVER_VERSION', '2.49.0'), ('BASH_ENV', '/etc/bash.bashrc'), ('PWD', '/workspaces/isaac_ros-dev/build/zed_wrapper'), ('CUSPARSELT_VERSION', '0.6.2.3'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/tritonserver/backends/dali/wheel/dali:'), ('_CUDA_COMPAT_PATH', '/usr/local/cuda/compat'), ('TRITON_SERVER_USER', 'triton-server'), ('TF_ADJUST_HUE_FUSED', '1'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('NCCL_VERSION', '2.22.3'), ('COLCON', '1'), ('OPENUCX_VERSION', '1.17.0'), ('HPCX_VERSION', '2.19'), ('CMAKE_PREFIX_PATH', '/workspaces/isaac_ros-dev/install/zed_components:/usr/local/libcudss-linux-0.3.0.9_cuda12-archive:/opt/ros/humble'), ('TF_AUTOTUNE_THRESHOLD', '2'), ('TRT_LIB_PATH', '/usr/lib/x86_64-linux-gnu')]), 'shell': False}
+[37.650140] (zed_wrapper) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[37.650411] (zed_wrapper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.650662] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/common_mono.yaml\n'}
+[37.650769] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/common_stereo.yaml\n'}
+[37.650884] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/ffmpeg.yaml\n'}
+[37.650948] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml\n'}
+[37.651010] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zed.yaml\n'}
+[37.651071] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml\n'}
+[37.651152] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml\n'}
+[37.651219] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml\n'}
+[37.651287] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml\n'}
+[37.651347] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml\n'}
+[37.651435] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zedxone4k.yaml\n'}
+[37.651494] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/config/zedxonegs.yaml\n'}
+[37.651552] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro\n'}
+[37.651611] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro\n'}
+[37.651761] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro\n'}
+[37.651849] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/launch/__pycache__/zed_camera.launch.cpython-310.pyc\n'}
+[37.651915] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py\n'}
+[37.651995] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper\n'}
+[37.652057] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper\n'}
+[37.652154] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh\n'}
+[37.652211] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv\n'}
+[37.652267] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/environment/path.sh\n'}
+[37.652337] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/environment/path.dsv\n'}
+[37.652408] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/local_setup.bash\n'}
+[37.652467] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/local_setup.sh\n'}
+[37.652521] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/local_setup.zsh\n'}
+[37.652576] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/local_setup.dsv\n'}
+[37.652632] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/package.dsv\n'}
+[37.661969] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper\n'}
+[37.662159] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake\n'}
+[37.662223] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake\n'}
+[37.662286] (zed_wrapper) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/isaac_ros-dev/install/zed_wrapper/share/zed_wrapper/package.xml\n'}
+[37.663234] (zed_wrapper) CommandEnded: {'returncode': 0}
+[37.670391] (zed_wrapper) JobEnded: {'identifier': 'zed_wrapper', 'rc': 0}
+[37.670904] (-) EventReactorShutdown: {}

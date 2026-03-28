@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-fbf10bc6beabb8bc5e16.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "zed_components",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_zed_components_files::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_zed_components_files-Release-3d5f63f560eafd937e7d.json",
+					"name" : "all_zed_components_files",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Release-ca908ab9f21fd7be0873.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_camera_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_camera_component-Release-df11956a9abba0c7bdf9.json",
+					"name" : "zed_camera_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_camera_one_component::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_camera_one_component-Release-92669347c50d499009a6.json",
+					"name" : "zed_camera_one_component",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zed_components_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zed_components_uninstall-Release-839a88a96ed4acd07422.json",
+					"name" : "zed_components_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/isaac_ros-dev/build/zed_components",
+		"source" : "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
