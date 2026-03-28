@@ -1,0 +1,22 @@
+[0.000000] (-) TimerEvent: {}
+[0.000114] (-) JobUnselected: {'identifier': 'isaac_common'}
+[0.000392] (-) JobUnselected: {'identifier': 'isaac_common_py'}
+[0.000429] (-) JobUnselected: {'identifier': 'isaac_ros_apriltag_interfaces'}
+[0.000457] (-) JobUnselected: {'identifier': 'isaac_ros_bi3d_interfaces'}
+[0.000523] (-) JobUnselected: {'identifier': 'isaac_ros_common'}
+[0.000551] (-) JobUnselected: {'identifier': 'isaac_ros_launch_utils'}
+[0.000558] (-) JobUnselected: {'identifier': 'isaac_ros_nitros_bridge_interfaces'}
+[0.000567] (-) JobUnselected: {'identifier': 'isaac_ros_nova_interfaces'}
+[0.000573] (-) JobUnselected: {'identifier': 'isaac_ros_pointcloud_interfaces'}
+[0.000579] (-) JobUnselected: {'identifier': 'isaac_ros_r2b_galileo'}
+[0.000585] (-) JobUnselected: {'identifier': 'isaac_ros_rosbag_utils'}
+[0.000591] (-) JobUnselected: {'identifier': 'isaac_ros_tensor_list_interfaces'}
+[0.000597] (-) JobUnselected: {'identifier': 'isaac_ros_test'}
+[0.000605] (-) JobUnselected: {'identifier': 'isaac_ros_test_cmake'}
+[0.000611] (-) JobUnselected: {'identifier': 'zed_components'}
+[0.000618] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.000626] (-) JobUnselected: {'identifier': 'zed_wrapper'}
+[0.000635] (zed2i_isaac_vslam) JobQueued: {'identifier': 'zed2i_isaac_vslam', 'dependencies': OrderedDict([('zed_components', '/home/jsthope/Xplore/ERC_NAV/localization/camera/isaac/install/zed_components'), ('zed_wrapper', '/home/jsthope/Xplore/ERC_NAV/localization/camera/isaac/install/zed_wrapper')])}
+[0.000646] (zed2i_isaac_vslam) JobStarted: {'identifier': 'zed2i_isaac_vslam'}
+[0.016285] (zed2i_isaac_vslam) JobEnded: {'identifier': 'zed2i_isaac_vslam', 'rc': 1}
+[0.026641] (-) EventReactorShutdown: {}

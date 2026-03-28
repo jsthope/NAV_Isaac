@@ -1,0 +1,747 @@
+[0.000000] (-) TimerEvent: {}
+[0.000155] (-) JobUnselected: {'identifier': 'isaac_common'}
+[0.000176] (-) JobUnselected: {'identifier': 'isaac_common_py'}
+[0.000185] (-) JobUnselected: {'identifier': 'isaac_ros_apriltag_interfaces'}
+[0.000192] (-) JobUnselected: {'identifier': 'isaac_ros_bi3d_interfaces'}
+[0.000199] (-) JobUnselected: {'identifier': 'isaac_ros_common'}
+[0.000207] (-) JobUnselected: {'identifier': 'isaac_ros_launch_utils'}
+[0.000213] (-) JobUnselected: {'identifier': 'isaac_ros_nitros_bridge_interfaces'}
+[0.000220] (-) JobUnselected: {'identifier': 'isaac_ros_nova_interfaces'}
+[0.000226] (-) JobUnselected: {'identifier': 'isaac_ros_pointcloud_interfaces'}
+[0.000235] (-) JobUnselected: {'identifier': 'isaac_ros_r2b_galileo'}
+[0.000242] (-) JobUnselected: {'identifier': 'isaac_ros_rosbag_utils'}
+[0.000249] (-) JobUnselected: {'identifier': 'isaac_ros_tensor_list_interfaces'}
+[0.000257] (-) JobUnselected: {'identifier': 'isaac_ros_test'}
+[0.000264] (-) JobUnselected: {'identifier': 'isaac_ros_test_cmake'}
+[0.000272] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.000281] (zed_components) JobQueued: {'identifier': 'zed_components', 'dependencies': OrderedDict()}
+[0.000291] (zed_wrapper) JobQueued: {'identifier': 'zed_wrapper', 'dependencies': OrderedDict([('zed_components', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components')])}
+[0.000300] (zed2i_isaac_vslam) JobQueued: {'identifier': 'zed2i_isaac_vslam', 'dependencies': OrderedDict([('zed_components', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components'), ('zed_wrapper', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper')])}
+[0.000312] (zed_components) JobStarted: {'identifier': 'zed_components'}
+[0.008703] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'cmake'}
+[0.009118] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[0.099659] (-) TimerEvent: {}
+[0.144345] (zed_components) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199661] (-) TimerEvent: {}
+[0.236366] (zed_components) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.244049] (zed_components) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.299770] (-) TimerEvent: {}
+[0.327193] (zed_components) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.332727] (zed_components) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.333421] (zed_components) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.333905] (zed_components) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.336675] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.399886] (-) TimerEvent: {}
+[0.410146] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.418926] (zed_components) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.419146] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.419501] (zed_components) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.422520] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[0.477158] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - not found\n'}
+[0.479303] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.499988] (-) TimerEvent: {}
+[0.543379] (zed_components) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.543624] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.600086] (-) TimerEvent: {}
+[0.608481] (zed_components) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.609314] (zed_components) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.633786] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_\n'}
+[0.700195] (-) TimerEvent: {}
+[0.707659] (zed_components) StdoutLine: {'line': b'-- Looking for sgemm_ - found\n'}
+[0.707936] (zed_components) StdoutLine: {'line': b'-- Found BLAS: /usr/lib/x86_64-linux-gnu/libopenblas.so  \n'}
+[0.728876] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda-11.8 (found suitable version "11.8", minimum required is "11") \n'}
+[0.800298] (-) TimerEvent: {}
+[0.900577] (-) TimerEvent: {}
+[0.909308] (zed_components) StdoutLine: {'line': b'-- Found CUDA: /usr/local/cuda-11.8 (found version "11.8") \n'}
+[0.914951] (zed_components) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[1.000653] (-) TimerEvent: {}
+[1.031299] (zed_components) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.077697] (zed_components) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.100758] (-) TimerEvent: {}
+[1.201006] (-) TimerEvent: {}
+[1.217965] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.227165] (zed_components) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.238064] (zed_components) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.252934] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.271107] (zed_components) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.301116] (-) TimerEvent: {}
+[1.388873] (zed_components) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.392786] (zed_components) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.401266] (-) TimerEvent: {}
+[1.419572] (zed_components) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.501445] (-) TimerEvent: {}
+[1.601656] (-) TimerEvent: {}
+[1.667231] (zed_components) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.668222] (zed_components) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.668286] (zed_components) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.701726] (-) TimerEvent: {}
+[1.781168] (zed_components) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.801798] (-) TimerEvent: {}
+[1.816550] (zed_components) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.817995] (zed_components) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.818287] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/include;/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include;/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/tools/include\n'}
+[1.818320] (zed_components) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.818985] (zed_components) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.820472] (zed_components) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.820522] (zed_components) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.821098] (zed_components) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.824207] (zed_components) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.842325] (zed_components) StdoutLine: {'line': b'-- Generating done\n'}
+[1.847459] (zed_components) StdoutLine: {'line': b'-- Build files have been written to: /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components\n'}
+[1.854261] (zed_components) CommandEnded: {'returncode': 0}
+[1.854657] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'build'}
+[1.855418] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components', '--', '-j20', '-l20'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[1.901934] (-) TimerEvent: {}
+[1.908135] (zed_components) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/zed_camera/src/zed_camera_component.cpp.o\x1b[0m\n'}
+[1.908610] (zed_components) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_win_avg.cpp.o\x1b[0m\n'}
+[1.909045] (zed_components) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[1.909602] (zed_components) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_win_avg.cpp.o\x1b[0m\n'}
+[1.909894] (zed_components) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/sl_tools.cpp.o\x1b[0m\n'}
+[1.911376] (zed_components) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[1.916492] (zed_components) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/zed_camera/src/zed_camera_one_component.cpp.o\x1b[0m\n'}
+[1.916779] (zed_components) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/zed_camera_one_component.dir/src/tools/src/gnss_replay.cpp.o\x1b[0m\n'}
+[2.002031] (-) TimerEvent: {}
+[2.102265] (-) TimerEvent: {}
+[2.202586] (-) TimerEvent: {}
+[2.302834] (-) TimerEvent: {}
+[2.403107] (-) TimerEvent: {}
+[2.503381] (-) TimerEvent: {}
+[2.603688] (-) TimerEvent: {}
+[2.703959] (-) TimerEvent: {}
+[2.804243] (-) TimerEvent: {}
+[2.904555] (-) TimerEvent: {}
+[3.004843] (-) TimerEvent: {}
+[3.105150] (-) TimerEvent: {}
+[3.205554] (-) TimerEvent: {}
+[3.305845] (-) TimerEvent: {}
+[3.406143] (-) TimerEvent: {}
+[3.506500] (-) TimerEvent: {}
+[3.606775] (-) TimerEvent: {}
+[3.707068] (-) TimerEvent: {}
+[3.807359] (-) TimerEvent: {}
+[3.907617] (-) TimerEvent: {}
+[4.007882] (-) TimerEvent: {}
+[4.108218] (-) TimerEvent: {}
+[4.208543] (-) TimerEvent: {}
+[4.308847] (-) TimerEvent: {}
+[4.409204] (-) TimerEvent: {}
+[4.509578] (-) TimerEvent: {}
+[4.609844] (-) TimerEvent: {}
+[4.721211] (-) TimerEvent: {}
+[4.821557] (-) TimerEvent: {}
+[4.921819] (-) TimerEvent: {}
+[5.022152] (-) TimerEvent: {}
+[5.066164] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.066534] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.066666] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.066723] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.066775] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.066826] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.066875] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.066924] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.066973] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.067022] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.067081] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.067130] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:50\x1b[m\x1b[K,\n'}
+[5.067178] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:44\x1b[m\x1b[K,\n'}
+[5.067226] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35\x1b[m\x1b[K,\n'}
+[5.067275] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[5.067323] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[5.067372] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[5.067421] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool stereolabs::ZedCamera::startCamera()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.067484] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[5.067671] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[5.067775] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.067803] (zed_components) StderrLine: {'line': b' 4250 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.width\x1b[m\x1b[K,\n'}
+[5.067826] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.067848] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.067868] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[5.067889] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:44:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.067910] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> \x1b[01;36m\x1b[K%d\x1b[m\x1b[Kx%d",\n'}
+[5.067931] (zed_components) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.067952] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.067972] (zed_components) StderrLine: {'line': b'      |                                            \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[5.068000] (zed_components) StderrLine: {'line': b'      |                                           \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.068020] (zed_components) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[5.068041] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[5.068061] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[5.068081] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.068101] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[5.068121] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.068143] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.068164] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[5.068184] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[5.068205] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.068224] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[5.068244] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.hpp:50\x1b[m\x1b[K,\n'}
+[5.068264] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.hpp:44\x1b[m\x1b[K,\n'}
+[5.068284] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:35\x1b[m\x1b[K,\n'}
+[5.068303] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/sl_types.hpp:18\x1b[m\x1b[K,\n'}
+[5.068323] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/zed_camera_component.hpp:24\x1b[m\x1b[K,\n'}
+[5.068344] (zed_components) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:15\x1b[m\x1b[K:\n'}
+[5.068363] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:21:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 6 has type \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wformat=\x1b[m\x1b[K]\n'}
+[5.068387] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), \x1b[01;35m\x1b[K" * SVO resolution -> %dx%d"\x1b[m\x1b[K,\n'}
+[5.068407] (zed_components) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.068427] (zed_components) StderrLine: {'line': b' 4250 |       mZed->getCameraInformation().camera_configuration.resolution.width,\n'}
+[5.068462] (zed_components) StderrLine: {'line': b' 4251 |       \x1b[32m\x1b[KmZed->getCameraInformation().camera_configuration.resolution.height\x1b[m\x1b[K);\n'}
+[5.068483] (zed_components) StderrLine: {'line': b'      |       \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.068503] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[5.068523] (zed_components) StderrLine: {'line': b'      |                                                                    \x1b[32m\x1b[Ksize_t {aka long unsigned int}\x1b[m\x1b[K\n'}
+[5.068544] (zed_components) StderrLine: {'line': b'\x1b[01m\x1b[K/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/src/zed_camera_component.cpp:4249:47:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[5.068565] (zed_components) StderrLine: {'line': b' 4249 |       get_logger(), " * SVO resolution -> %dx\x1b[01;36m\x1b[K%d\x1b[m\x1b[K",\n'}
+[5.068585] (zed_components) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[5.068606] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[5.068625] (zed_components) StderrLine: {'line': b'      |                                               \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[5.068645] (zed_components) StderrLine: {'line': b'      |                                              \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[5.122275] (-) TimerEvent: {}
+[5.222525] (-) TimerEvent: {}
+[5.322745] (-) TimerEvent: {}
+[5.422996] (-) TimerEvent: {}
+[5.523297] (-) TimerEvent: {}
+[5.623567] (-) TimerEvent: {}
+[5.723795] (-) TimerEvent: {}
+[5.824036] (-) TimerEvent: {}
+[5.924288] (-) TimerEvent: {}
+[6.024572] (-) TimerEvent: {}
+[6.124878] (-) TimerEvent: {}
+[6.225179] (-) TimerEvent: {}
+[6.325406] (-) TimerEvent: {}
+[6.425679] (-) TimerEvent: {}
+[6.526000] (-) TimerEvent: {}
+[6.626340] (-) TimerEvent: {}
+[6.726661] (-) TimerEvent: {}
+[6.826991] (-) TimerEvent: {}
+[6.927322] (-) TimerEvent: {}
+[7.027695] (-) TimerEvent: {}
+[7.127978] (-) TimerEvent: {}
+[7.228348] (-) TimerEvent: {}
+[7.328714] (-) TimerEvent: {}
+[7.428978] (-) TimerEvent: {}
+[7.529277] (-) TimerEvent: {}
+[7.629578] (-) TimerEvent: {}
+[7.729877] (-) TimerEvent: {}
+[7.830169] (-) TimerEvent: {}
+[7.930516] (-) TimerEvent: {}
+[8.030892] (-) TimerEvent: {}
+[8.131394] (-) TimerEvent: {}
+[8.231671] (-) TimerEvent: {}
+[8.332039] (-) TimerEvent: {}
+[8.432393] (-) TimerEvent: {}
+[8.532662] (-) TimerEvent: {}
+[8.632918] (-) TimerEvent: {}
+[8.733489] (-) TimerEvent: {}
+[8.833747] (-) TimerEvent: {}
+[8.934044] (-) TimerEvent: {}
+[9.034373] (-) TimerEvent: {}
+[9.134767] (-) TimerEvent: {}
+[9.235015] (-) TimerEvent: {}
+[9.335311] (-) TimerEvent: {}
+[9.435594] (-) TimerEvent: {}
+[9.535895] (-) TimerEvent: {}
+[9.636199] (-) TimerEvent: {}
+[9.736506] (-) TimerEvent: {}
+[9.836722] (-) TimerEvent: {}
+[9.936984] (-) TimerEvent: {}
+[10.037283] (-) TimerEvent: {}
+[10.137602] (-) TimerEvent: {}
+[10.237823] (-) TimerEvent: {}
+[10.338117] (-) TimerEvent: {}
+[10.438356] (-) TimerEvent: {}
+[10.538619] (-) TimerEvent: {}
+[10.638910] (-) TimerEvent: {}
+[10.739240] (-) TimerEvent: {}
+[10.839600] (-) TimerEvent: {}
+[10.939989] (-) TimerEvent: {}
+[11.040354] (-) TimerEvent: {}
+[11.140741] (-) TimerEvent: {}
+[11.241124] (-) TimerEvent: {}
+[11.341392] (-) TimerEvent: {}
+[11.441667] (-) TimerEvent: {}
+[11.541951] (-) TimerEvent: {}
+[11.642311] (-) TimerEvent: {}
+[11.742614] (-) TimerEvent: {}
+[11.842871] (-) TimerEvent: {}
+[11.943180] (-) TimerEvent: {}
+[12.043454] (-) TimerEvent: {}
+[12.143747] (-) TimerEvent: {}
+[12.244044] (-) TimerEvent: {}
+[12.344404] (-) TimerEvent: {}
+[12.444688] (-) TimerEvent: {}
+[12.545091] (-) TimerEvent: {}
+[12.645445] (-) TimerEvent: {}
+[12.745734] (-) TimerEvent: {}
+[12.755565] (zed_components) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_one_component.so\x1b[0m\n'}
+[12.845826] (-) TimerEvent: {}
+[12.946075] (-) TimerEvent: {}
+[13.021655] (zed_components) StdoutLine: {'line': b'[ 90%] Built target zed_camera_one_component\n'}
+[13.046179] (-) TimerEvent: {}
+[13.146477] (-) TimerEvent: {}
+[13.246695] (-) TimerEvent: {}
+[13.346929] (-) TimerEvent: {}
+[13.447143] (-) TimerEvent: {}
+[13.547376] (-) TimerEvent: {}
+[13.647598] (-) TimerEvent: {}
+[13.747817] (-) TimerEvent: {}
+[13.848052] (-) TimerEvent: {}
+[13.948345] (-) TimerEvent: {}
+[14.048572] (-) TimerEvent: {}
+[14.148782] (-) TimerEvent: {}
+[14.248984] (-) TimerEvent: {}
+[14.349190] (-) TimerEvent: {}
+[14.449482] (-) TimerEvent: {}
+[14.549819] (-) TimerEvent: {}
+[14.650167] (-) TimerEvent: {}
+[14.750375] (-) TimerEvent: {}
+[14.850593] (-) TimerEvent: {}
+[14.950793] (-) TimerEvent: {}
+[15.051007] (-) TimerEvent: {}
+[15.151245] (-) TimerEvent: {}
+[15.251478] (-) TimerEvent: {}
+[15.351739] (-) TimerEvent: {}
+[15.452022] (-) TimerEvent: {}
+[15.552345] (-) TimerEvent: {}
+[15.652639] (-) TimerEvent: {}
+[15.752856] (-) TimerEvent: {}
+[15.853148] (-) TimerEvent: {}
+[15.953389] (-) TimerEvent: {}
+[16.053710] (-) TimerEvent: {}
+[16.154032] (-) TimerEvent: {}
+[16.254272] (-) TimerEvent: {}
+[16.354515] (-) TimerEvent: {}
+[16.454711] (-) TimerEvent: {}
+[16.554933] (-) TimerEvent: {}
+[16.655155] (-) TimerEvent: {}
+[16.755429] (-) TimerEvent: {}
+[16.855635] (-) TimerEvent: {}
+[16.955827] (-) TimerEvent: {}
+[17.056041] (-) TimerEvent: {}
+[17.156245] (-) TimerEvent: {}
+[17.256556] (-) TimerEvent: {}
+[17.356757] (-) TimerEvent: {}
+[17.456976] (-) TimerEvent: {}
+[17.557205] (-) TimerEvent: {}
+[17.657536] (-) TimerEvent: {}
+[17.757768] (-) TimerEvent: {}
+[17.857995] (-) TimerEvent: {}
+[17.958312] (-) TimerEvent: {}
+[18.058566] (-) TimerEvent: {}
+[18.158786] (-) TimerEvent: {}
+[18.259014] (-) TimerEvent: {}
+[18.359239] (-) TimerEvent: {}
+[18.459538] (-) TimerEvent: {}
+[18.559742] (-) TimerEvent: {}
+[18.659961] (-) TimerEvent: {}
+[18.760194] (-) TimerEvent: {}
+[18.860493] (-) TimerEvent: {}
+[18.960699] (-) TimerEvent: {}
+[19.060951] (-) TimerEvent: {}
+[19.161243] (-) TimerEvent: {}
+[19.261483] (-) TimerEvent: {}
+[19.361721] (-) TimerEvent: {}
+[19.461926] (-) TimerEvent: {}
+[19.562146] (-) TimerEvent: {}
+[19.662386] (-) TimerEvent: {}
+[19.762575] (-) TimerEvent: {}
+[19.862778] (-) TimerEvent: {}
+[19.963011] (-) TimerEvent: {}
+[20.063291] (-) TimerEvent: {}
+[20.163567] (-) TimerEvent: {}
+[20.263779] (-) TimerEvent: {}
+[20.364026] (-) TimerEvent: {}
+[20.464256] (-) TimerEvent: {}
+[20.564552] (-) TimerEvent: {}
+[20.664804] (-) TimerEvent: {}
+[20.765038] (-) TimerEvent: {}
+[20.865313] (-) TimerEvent: {}
+[20.965562] (-) TimerEvent: {}
+[21.065867] (-) TimerEvent: {}
+[21.166126] (-) TimerEvent: {}
+[21.266377] (-) TimerEvent: {}
+[21.366578] (-) TimerEvent: {}
+[21.466788] (-) TimerEvent: {}
+[21.567008] (-) TimerEvent: {}
+[21.667309] (-) TimerEvent: {}
+[21.767520] (-) TimerEvent: {}
+[21.867811] (-) TimerEvent: {}
+[21.968056] (-) TimerEvent: {}
+[22.068281] (-) TimerEvent: {}
+[22.168571] (-) TimerEvent: {}
+[22.268873] (-) TimerEvent: {}
+[22.369129] (-) TimerEvent: {}
+[22.469414] (-) TimerEvent: {}
+[22.569648] (-) TimerEvent: {}
+[22.669936] (-) TimerEvent: {}
+[22.770162] (-) TimerEvent: {}
+[22.870450] (-) TimerEvent: {}
+[22.970760] (-) TimerEvent: {}
+[23.070991] (-) TimerEvent: {}
+[23.171282] (-) TimerEvent: {}
+[23.271587] (-) TimerEvent: {}
+[23.371831] (-) TimerEvent: {}
+[23.472089] (-) TimerEvent: {}
+[23.572326] (-) TimerEvent: {}
+[23.672539] (-) TimerEvent: {}
+[23.772759] (-) TimerEvent: {}
+[23.873040] (-) TimerEvent: {}
+[23.973280] (-) TimerEvent: {}
+[24.073522] (-) TimerEvent: {}
+[24.173733] (-) TimerEvent: {}
+[24.273974] (-) TimerEvent: {}
+[24.374176] (-) TimerEvent: {}
+[24.474475] (-) TimerEvent: {}
+[24.574705] (-) TimerEvent: {}
+[24.674963] (-) TimerEvent: {}
+[24.775284] (-) TimerEvent: {}
+[24.875595] (-) TimerEvent: {}
+[24.975844] (-) TimerEvent: {}
+[25.076079] (-) TimerEvent: {}
+[25.176420] (-) TimerEvent: {}
+[25.276680] (-) TimerEvent: {}
+[25.376997] (-) TimerEvent: {}
+[25.477289] (-) TimerEvent: {}
+[25.577534] (-) TimerEvent: {}
+[25.677796] (-) TimerEvent: {}
+[25.778051] (-) TimerEvent: {}
+[25.878248] (-) TimerEvent: {}
+[25.978495] (-) TimerEvent: {}
+[26.078796] (-) TimerEvent: {}
+[26.179014] (-) TimerEvent: {}
+[26.279286] (-) TimerEvent: {}
+[26.379505] (-) TimerEvent: {}
+[26.479765] (-) TimerEvent: {}
+[26.580037] (-) TimerEvent: {}
+[26.680298] (-) TimerEvent: {}
+[26.780492] (-) TimerEvent: {}
+[26.880734] (-) TimerEvent: {}
+[26.981021] (-) TimerEvent: {}
+[27.081274] (-) TimerEvent: {}
+[27.181562] (-) TimerEvent: {}
+[27.281911] (-) TimerEvent: {}
+[27.382243] (-) TimerEvent: {}
+[27.482520] (-) TimerEvent: {}
+[27.582757] (-) TimerEvent: {}
+[27.683014] (-) TimerEvent: {}
+[27.783291] (-) TimerEvent: {}
+[27.883581] (-) TimerEvent: {}
+[27.983863] (-) TimerEvent: {}
+[28.084094] (-) TimerEvent: {}
+[28.184331] (-) TimerEvent: {}
+[28.284595] (-) TimerEvent: {}
+[28.384842] (-) TimerEvent: {}
+[28.485075] (-) TimerEvent: {}
+[28.585329] (-) TimerEvent: {}
+[28.685579] (-) TimerEvent: {}
+[28.785815] (-) TimerEvent: {}
+[28.886065] (-) TimerEvent: {}
+[28.986297] (-) TimerEvent: {}
+[29.086635] (-) TimerEvent: {}
+[29.186981] (-) TimerEvent: {}
+[29.287394] (-) TimerEvent: {}
+[29.387801] (-) TimerEvent: {}
+[29.488080] (-) TimerEvent: {}
+[29.588465] (-) TimerEvent: {}
+[29.688748] (-) TimerEvent: {}
+[29.788994] (-) TimerEvent: {}
+[29.889254] (-) TimerEvent: {}
+[29.989525] (-) TimerEvent: {}
+[30.089751] (-) TimerEvent: {}
+[30.189969] (-) TimerEvent: {}
+[30.290175] (-) TimerEvent: {}
+[30.390422] (-) TimerEvent: {}
+[30.490689] (-) TimerEvent: {}
+[30.590961] (-) TimerEvent: {}
+[30.691185] (-) TimerEvent: {}
+[30.791398] (-) TimerEvent: {}
+[30.891631] (-) TimerEvent: {}
+[30.991877] (-) TimerEvent: {}
+[31.092119] (-) TimerEvent: {}
+[31.192410] (-) TimerEvent: {}
+[31.292622] (-) TimerEvent: {}
+[31.392829] (-) TimerEvent: {}
+[31.493053] (-) TimerEvent: {}
+[31.593361] (-) TimerEvent: {}
+[31.693588] (-) TimerEvent: {}
+[31.793814] (-) TimerEvent: {}
+[31.894044] (-) TimerEvent: {}
+[31.994286] (-) TimerEvent: {}
+[32.094515] (-) TimerEvent: {}
+[32.194729] (-) TimerEvent: {}
+[32.294953] (-) TimerEvent: {}
+[32.395296] (-) TimerEvent: {}
+[32.495583] (-) TimerEvent: {}
+[32.595848] (-) TimerEvent: {}
+[32.696074] (-) TimerEvent: {}
+[32.796379] (-) TimerEvent: {}
+[32.896912] (-) TimerEvent: {}
+[32.997250] (-) TimerEvent: {}
+[33.097585] (-) TimerEvent: {}
+[33.197792] (-) TimerEvent: {}
+[33.298049] (-) TimerEvent: {}
+[33.398346] (-) TimerEvent: {}
+[33.498684] (-) TimerEvent: {}
+[33.598980] (-) TimerEvent: {}
+[33.699182] (-) TimerEvent: {}
+[33.799404] (-) TimerEvent: {}
+[33.899626] (-) TimerEvent: {}
+[33.999894] (-) TimerEvent: {}
+[34.100145] (-) TimerEvent: {}
+[34.200389] (-) TimerEvent: {}
+[34.300701] (-) TimerEvent: {}
+[34.400946] (-) TimerEvent: {}
+[34.501270] (-) TimerEvent: {}
+[34.601520] (-) TimerEvent: {}
+[34.701761] (-) TimerEvent: {}
+[34.802103] (-) TimerEvent: {}
+[34.902436] (-) TimerEvent: {}
+[35.002782] (-) TimerEvent: {}
+[35.103099] (-) TimerEvent: {}
+[35.203421] (-) TimerEvent: {}
+[35.303667] (-) TimerEvent: {}
+[35.403938] (-) TimerEvent: {}
+[35.504295] (-) TimerEvent: {}
+[35.604616] (-) TimerEvent: {}
+[35.704903] (-) TimerEvent: {}
+[35.805196] (-) TimerEvent: {}
+[35.905581] (-) TimerEvent: {}
+[36.005866] (-) TimerEvent: {}
+[36.106104] (-) TimerEvent: {}
+[36.206305] (-) TimerEvent: {}
+[36.306566] (-) TimerEvent: {}
+[36.406786] (-) TimerEvent: {}
+[36.507018] (-) TimerEvent: {}
+[36.607231] (-) TimerEvent: {}
+[36.707529] (-) TimerEvent: {}
+[36.807733] (-) TimerEvent: {}
+[36.907986] (-) TimerEvent: {}
+[37.008348] (-) TimerEvent: {}
+[37.108603] (-) TimerEvent: {}
+[37.208816] (-) TimerEvent: {}
+[37.309054] (-) TimerEvent: {}
+[37.409291] (-) TimerEvent: {}
+[37.509516] (-) TimerEvent: {}
+[37.609756] (-) TimerEvent: {}
+[37.710009] (-) TimerEvent: {}
+[37.810320] (-) TimerEvent: {}
+[37.910554] (-) TimerEvent: {}
+[38.010794] (-) TimerEvent: {}
+[38.111144] (-) TimerEvent: {}
+[38.211485] (-) TimerEvent: {}
+[38.311724] (-) TimerEvent: {}
+[38.411967] (-) TimerEvent: {}
+[38.512243] (-) TimerEvent: {}
+[38.612525] (-) TimerEvent: {}
+[38.712758] (-) TimerEvent: {}
+[38.813018] (-) TimerEvent: {}
+[38.913302] (-) TimerEvent: {}
+[39.013585] (-) TimerEvent: {}
+[39.113885] (-) TimerEvent: {}
+[39.214169] (-) TimerEvent: {}
+[39.314593] (-) TimerEvent: {}
+[39.414846] (-) TimerEvent: {}
+[39.515148] (-) TimerEvent: {}
+[39.615451] (-) TimerEvent: {}
+[39.715906] (-) TimerEvent: {}
+[39.816153] (-) TimerEvent: {}
+[39.879086] (zed_components) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libzed_camera_component.so\x1b[0m\n'}
+[39.916268] (-) TimerEvent: {}
+[40.016515] (-) TimerEvent: {}
+[40.116818] (-) TimerEvent: {}
+[40.217121] (-) TimerEvent: {}
+[40.233357] (zed_components) StdoutLine: {'line': b'[100%] Built target zed_camera_component\n'}
+[40.240833] (zed_components) CommandEnded: {'returncode': 0}
+[40.241386] (zed_components) JobProgress: {'identifier': 'zed_components', 'progress': 'install'}
+[40.248628] (zed_components) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[40.255176] (zed_components) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[40.255581] (zed_components) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[40.255737] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib/libzed_camera_component.so\n'}
+[40.260761] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib/libzed_camera_one_component.so\n'}
+[40.268571] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//cost_traversability.hpp\n'}
+[40.276711] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//sl_types.hpp\n'}
+[40.285591] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//zed_camera_component.hpp\n'}
+[40.298305] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//zed_camera_one_component.hpp\n'}
+[40.307010] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//gnss_replay.hpp\n'}
+[40.313449] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//json.hpp\n'}
+[40.317231] (-) TimerEvent: {}
+[40.322497] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//sl_logging.hpp\n'}
+[40.338050] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//sl_tools.hpp\n'}
+[40.350725] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//sl_win_avg.hpp\n'}
+[40.361389] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/include/zed_components//visibility_control.hpp\n'}
+[40.369332] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/library_path.sh\n'}
+[40.375703] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/library_path.dsv\n'}
+[40.380395] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/ament_index/resource_index/package_run_dependencies/zed_components\n'}
+[40.385244] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/ament_index/resource_index/parent_prefix_path/zed_components\n'}
+[40.393222] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/ament_prefix_path.sh\n'}
+[40.402027] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/ament_prefix_path.dsv\n'}
+[40.412503] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/path.sh\n'}
+[40.417401] (-) TimerEvent: {}
+[40.423351] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/environment/path.dsv\n'}
+[40.436666] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/local_setup.bash\n'}
+[40.442777] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/local_setup.sh\n'}
+[40.449504] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/local_setup.zsh\n'}
+[40.459406] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/local_setup.dsv\n'}
+[40.470318] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/package.dsv\n'}
+[40.479677] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/ament_index/resource_index/packages/zed_components\n'}
+[40.487571] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/ament_index/resource_index/rclcpp_components/zed_components\n'}
+[40.498608] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.507987] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.517639] (-) TimerEvent: {}
+[40.517914] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.525458] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/cmake/zed_componentsConfig.cmake\n'}
+[40.536033] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/cmake/zed_componentsConfig-version.cmake\n'}
+[40.543594] (zed_components) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/share/zed_components/package.xml\n'}
+[40.554136] (zed_components) CommandEnded: {'returncode': 0}
+[40.579873] (zed_components) JobEnded: {'identifier': 'zed_components', 'rc': 0}
+[40.580380] (zed_wrapper) JobStarted: {'identifier': 'zed_wrapper'}
+[40.586169] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'cmake'}
+[40.586485] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_wrapper', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[40.617793] (-) TimerEvent: {}
+[40.653582] (zed_wrapper) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[40.706684] (zed_wrapper) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[40.711434] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[40.717851] (-) TimerEvent: {}
+[40.785736] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[40.790799] (zed_wrapper) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[40.790998] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[40.791171] (zed_wrapper) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[40.793238] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[40.817968] (-) TimerEvent: {}
+[40.867993] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[40.872479] (zed_wrapper) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[40.872635] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[40.872859] (zed_wrapper) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[40.875297] (zed_wrapper) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.13 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[40.918057] (-) TimerEvent: {}
+[40.997372] (zed_wrapper) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[41.018150] (-) TimerEvent: {}
+[41.040990] (zed_wrapper) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[41.118370] (-) TimerEvent: {}
+[41.162526] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[41.167695] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[41.174817] (zed_wrapper) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[41.183924] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[41.196419] (zed_wrapper) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[41.218550] (-) TimerEvent: {}
+[41.232623] (zed_wrapper) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[41.237217] (zed_wrapper) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[41.258262] (zed_wrapper) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[41.266777] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[41.318659] (-) TimerEvent: {}
+[41.319448] (zed_wrapper) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[41.319706] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[41.370334] (zed_wrapper) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[41.370943] (zed_wrapper) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[41.418765] (-) TimerEvent: {}
+[41.519097] (-) TimerEvent: {}
+[41.552836] (zed_wrapper) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[41.553628] (zed_wrapper) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[41.553714] (zed_wrapper) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[41.619228] (-) TimerEvent: {}
+[41.700977] (zed_wrapper) StdoutLine: {'line': b'-- Configuring done\n'}
+[41.704630] (zed_wrapper) StdoutLine: {'line': b'-- Generating done\n'}
+[41.706227] (zed_wrapper) StdoutLine: {'line': b'-- Build files have been written to: /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper\n'}
+[41.712615] (zed_wrapper) CommandEnded: {'returncode': 0}
+[41.713032] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'build'}
+[41.713249] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper', '--', '-j20', '-l20'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[41.719344] (-) TimerEvent: {}
+[41.754472] (zed_wrapper) CommandEnded: {'returncode': 0}
+[41.755057] (zed_wrapper) JobProgress: {'identifier': 'zed_wrapper', 'progress': 'install'}
+[41.755209] (zed_wrapper) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[41.762768] (zed_wrapper) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[41.763057] (zed_wrapper) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[41.763561] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/common_mono.yaml\n'}
+[41.773535] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/common_stereo.yaml\n'}
+[41.782717] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/ffmpeg.yaml\n'}
+[41.790166] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml\n'}
+[41.798313] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zed.yaml\n'}
+[41.807632] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml\n'}
+[41.814131] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml\n'}
+[41.819576] (-) TimerEvent: {}
+[41.820478] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml\n'}
+[41.829810] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml\n'}
+[41.839899] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml\n'}
+[41.847253] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zedxone4k.yaml\n'}
+[41.855669] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/config/zedxonegs.yaml\n'}
+[41.864280] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro\n'}
+[41.873900] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro\n'}
+[41.880166] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro\n'}
+[41.887279] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/launch/__pycache__/zed_camera.launch.cpython-310.pyc\n'}
+[41.893661] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py\n'}
+[41.902561] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper\n'}
+[41.909029] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper\n'}
+[41.916317] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh\n'}
+[41.919681] (-) TimerEvent: {}
+[41.923618] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv\n'}
+[41.933470] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/environment/path.sh\n'}
+[41.941136] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/environment/path.dsv\n'}
+[41.946809] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/local_setup.bash\n'}
+[41.953179] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/local_setup.sh\n'}
+[41.964564] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/local_setup.zsh\n'}
+[41.971414] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/local_setup.dsv\n'}
+[41.979314] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/package.dsv\n'}
+[41.987779] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper\n'}
+[41.994589] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake\n'}
+[42.000137] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake\n'}
+[42.008051] (zed_wrapper) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper/share/zed_wrapper/package.xml\n'}
+[42.016975] (zed_wrapper) CommandEnded: {'returncode': 0}
+[42.019749] (-) TimerEvent: {}
+[42.026371] (zed_wrapper) JobEnded: {'identifier': 'zed_wrapper', 'rc': 0}
+[42.026722] (zed2i_isaac_vslam) JobStarted: {'identifier': 'zed2i_isaac_vslam'}
+[42.049064] (zed2i_isaac_vslam) JobProgress: {'identifier': 'zed2i_isaac_vslam', 'progress': 'cmake'}
+[42.049356] (zed2i_isaac_vslam) Command: {'cmd': ['/usr/bin/cmake', '/home/xplore/dev_ws/src/localization/camera/isaac/src/zed2i_isaac_vslam', '-DCMAKE_BUILD_TYPE=Release', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[42.094505] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[42.119848] (-) TimerEvent: {}
+[42.145046] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[42.149819] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[42.219991] (-) TimerEvent: {}
+[42.221775] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[42.232469] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[42.233063] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[42.233837] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[42.239867] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[42.320120] (-) TimerEvent: {}
+[42.329199] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[42.337909] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[42.338232] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[42.338994] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[42.342992] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[42.420226] (-) TimerEvent: {}
+[42.484580] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[42.520388] (-) TimerEvent: {}
+[42.532778] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[42.610831] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Configuring done\n'}
+[42.612141] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Generating done\n'}
+[42.613030] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Build files have been written to: /home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam\n'}
+[42.616027] (zed2i_isaac_vslam) CommandEnded: {'returncode': 0}
+[42.617344] (zed2i_isaac_vslam) JobProgress: {'identifier': 'zed2i_isaac_vslam', 'progress': 'build'}
+[42.617392] (zed2i_isaac_vslam) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam', '--', '-j20', '-l20'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[42.620512] (-) TimerEvent: {}
+[42.671411] (zed2i_isaac_vslam) CommandEnded: {'returncode': 0}
+[42.672382] (zed2i_isaac_vslam) JobProgress: {'identifier': 'zed2i_isaac_vslam', 'progress': 'install'}
+[42.672836] (zed2i_isaac_vslam) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam'], 'cwd': '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam', 'env': OrderedDict([('NVIDIA_CTK_LIBCUDA_DIR', '/usr/lib/x86_64-linux-gnu'), ('HOSTNAME', 'ubuntu'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/lib:/home/xplore/dev_ws/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/usr/local/cuda-11.8/lib64:/opt/ros/humble/lib'), ('AMENT_CPPCHECK_ALLOW_SLOW_VERSIONS', '1'), ('HOME', '/home/xplore'), ('OLDPWD', '/home/xplore/dev_ws/src/localization/camera/isaac/src'), ('ROS_PYTHON_VERSION', '3'), ('_colcon_cd_root', '/opt/ros/humble/'), ('COLCON_PREFIX_PATH', '/home/xplore/dev_ws/install:/opt/ros/humble'), ('ROS_DISTRO', 'humble'), ('IGN_GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'graphics,utility,compute'), ('USERNAME', 'xplore'), ('TERM', 'xterm'), ('GAZEBO_MODEL_PATH', '/opt/ros/humble/share'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/usr/local/cuda-11.8/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', 'unix:0'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble'), ('IGN_GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('GAZEBO_RESOURCE_PATH', '/opt/ros/humble/share'), ('PWD', '/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam'), ('CUDA_HOME', '/usr/local/cuda-11.8'), ('ZED_DIR', '/usr/local/zed'), ('PYTHONPATH', '/home/xplore/dev_ws/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/xplore/dev_ws/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('TZ', 'Europe/Zurich'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_wrapper:/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/usr/local/zed:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble')]), 'shell': False}
+[42.683590] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[42.683901] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[42.684138] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/config/SN32835549.conf\n'}
+[42.694277] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/config/visual_slam.yaml\n'}
+[42.703865] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/config/zed2i_camera.yaml\n'}
+[42.714758] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/launch/zed2i_isaac_vslam.launch.py\n'}
+[42.720621] (-) TimerEvent: {}
+[42.724283] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/rviz/zed2i_isaac_vslam.rviz\n'}
+[42.742628] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/ament_index/resource_index/package_run_dependencies/zed2i_isaac_vslam\n'}
+[42.758240] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/ament_index/resource_index/parent_prefix_path/zed2i_isaac_vslam\n'}
+[42.765216] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/environment/ament_prefix_path.sh\n'}
+[42.775779] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/environment/ament_prefix_path.dsv\n'}
+[42.785351] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/environment/path.sh\n'}
+[42.796632] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/environment/path.dsv\n'}
+[42.807113] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/local_setup.bash\n'}
+[42.820321] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/local_setup.sh\n'}
+[42.820672] (-) TimerEvent: {}
+[42.828030] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/local_setup.zsh\n'}
+[42.850202] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/local_setup.dsv\n'}
+[42.862766] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/package.dsv\n'}
+[42.873078] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/ament_index/resource_index/packages/zed2i_isaac_vslam\n'}
+[42.881856] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/cmake/zed2i_isaac_vslamConfig.cmake\n'}
+[42.889981] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/cmake/zed2i_isaac_vslamConfig-version.cmake\n'}
+[42.899372] (zed2i_isaac_vslam) StdoutLine: {'line': b'-- Symlinking: /home/xplore/dev_ws/src/localization/camera/isaac/install/zed2i_isaac_vslam/share/zed2i_isaac_vslam/package.xml\n'}
+[42.908973] (zed2i_isaac_vslam) CommandEnded: {'returncode': 0}
+[42.915610] (zed2i_isaac_vslam) JobEnded: {'identifier': 'zed2i_isaac_vslam', 'rc': 0}
+[42.916086] (-) EventReactorShutdown: {}
