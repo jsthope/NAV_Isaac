@@ -23,7 +23,7 @@ function(ament_cmake_symlink_install_directory cmake_current_source_dir)
 
   # make destination absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/workspaces/isaac_ros-dev/install/zed_components/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -128,7 +128,7 @@ function(ament_cmake_symlink_install_files cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/workspaces/isaac_ros-dev/install/zed_components/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -186,7 +186,7 @@ function(ament_cmake_symlink_install_programs cmake_current_source_dir)
 
   # make destination an absolute path and ensure that it exists
   if(NOT IS_ABSOLUTE "${ARG_DESTINATION}")
-    set(ARG_DESTINATION "/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/${ARG_DESTINATION}")
+    set(ARG_DESTINATION "/workspaces/isaac_ros-dev/install/zed_components/${ARG_DESTINATION}")
   endif()
   if(NOT EXISTS "${ARG_DESTINATION}")
     file(MAKE_DIRECTORY "${ARG_DESTINATION}")
@@ -256,7 +256,7 @@ function(ament_cmake_symlink_install_targets)
 
     # make destination an absolute path and ensure that it exists
     if(NOT IS_ABSOLUTE "${destination}")
-      set(destination "/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components/${destination}")
+      set(destination "/workspaces/isaac_ros-dev/install/zed_components/${destination}")
     endif()
     if(NOT EXISTS "${destination}")
       file(MAKE_DIRECTORY "${destination}")
@@ -316,67 +316,67 @@ message(STATUS "Execute custom install script")
 # begin of custom install code
 
 # install("TARGETS" "zed_camera_component" "zed_camera_one_component" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "lib/zed_components")
-include("/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+include("/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
-# install(DIRECTORY "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/" "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/tools/include/" "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/include/" "DESTINATION" "include/zed_components/")
-ament_cmake_symlink_install_directory("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" DIRECTORY "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/" "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/tools/include/" "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/src/include/" "DESTINATION" "include/zed_components/")
+# install(DIRECTORY "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/" "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/tools/include/" "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/include/" "DESTINATION" "include/zed_components/")
+ament_cmake_symlink_install_directory("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" DIRECTORY "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/zed_camera/include/" "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/tools/include/" "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/src/include/" "DESTINATION" "include/zed_components/")
 
 # install(FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/lib/python3.10/site-packages/ament_package/template/environment_hook/library_path.sh" "DESTINATION" "share/zed_components/environment")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_components/environment")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/library_path.dsv" "DESTINATION" "share/zed_components/environment")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_components" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_components" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_components" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/zed_components" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_components" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_components" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_components" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/zed_components" "DESTINATION" "share/ament_index/resource_index/parent_prefix_path")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/zed_components/environment")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_components/environment")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/ament_prefix_path.dsv" "DESTINATION" "share/zed_components/environment")
 
 # install(FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh" "DESTINATION" "share/zed_components/environment")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_components/environment")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_components/environment")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_components/environment")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/path.dsv" "DESTINATION" "share/zed_components/environment")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.bash" "DESTINATION" "share/zed_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.sh" "DESTINATION" "share/zed_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.zsh" "DESTINATION" "share/zed_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/local_setup.dsv" "DESTINATION" "share/zed_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_environment_hooks/package.dsv" "DESTINATION" "share/zed_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/packages/zed_components" "DESTINATION" "share/ament_index/resource_index/packages")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/packages/zed_components" "DESTINATION" "share/ament_index/resource_index/packages")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/packages/zed_components" "DESTINATION" "share/ament_index/resource_index/packages")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/packages/zed_components" "DESTINATION" "share/ament_index/resource_index/packages")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/zed_components" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/zed_components" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/zed_components" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_index/share/ament_index/resource_index/rclcpp_components/zed_components" "DESTINATION" "share/ament_index/resource_index/rclcpp_components")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_components/cmake")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_include_directories/ament_cmake_export_include_directories-extras.cmake" "DESTINATION" "share/zed_components/cmake")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_components/cmake")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake" "DESTINATION" "share/zed_components/cmake")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_components/cmake")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_components/cmake")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake" "DESTINATION" "share/zed_components/cmake")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_core/zed_componentsConfig.cmake" "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_core/zed_componentsConfig-version.cmake" "DESTINATION" "share/zed_components/cmake")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_core/zed_componentsConfig.cmake" "/home/xplore/dev_ws/src/localization/camera/isaac/build/zed_components/ament_cmake_core/zed_componentsConfig-version.cmake" "DESTINATION" "share/zed_components/cmake")
+# install(FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_core/zed_componentsConfig.cmake" "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_core/zed_componentsConfig-version.cmake" "DESTINATION" "share/zed_components/cmake")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_core/zed_componentsConfig.cmake" "/workspaces/isaac_ros-dev/build/zed_components/ament_cmake_core/zed_componentsConfig-version.cmake" "DESTINATION" "share/zed_components/cmake")
 
-# install(FILES "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/package.xml" "DESTINATION" "share/zed_components")
-ament_cmake_symlink_install_files("/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components" FILES "/home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_components/package.xml" "DESTINATION" "share/zed_components")
+# install(FILES "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/package.xml" "DESTINATION" "share/zed_components")
+ament_cmake_symlink_install_files("/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components" FILES "/workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_components/package.xml" "DESTINATION" "share/zed_components")

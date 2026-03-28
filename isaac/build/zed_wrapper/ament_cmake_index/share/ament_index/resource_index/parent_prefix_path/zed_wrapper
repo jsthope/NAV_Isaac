@@ -1,1 +1,1 @@
-/home/xplore/dev_ws/src/localization/camera/isaac/install/zed_components:/home/xplore/dev_ws/install/ros2_aruco_opti:/home/xplore/dev_ws/install/ros2_aruco_interfaces:/home/xplore/dev_ws/install/ros2_aruco:/opt/ros/humble
+/workspaces/isaac_ros-dev/install/zed2i_isaac_vslam:/workspaces/isaac_ros-dev/install/zed_wrapper:/workspaces/isaac_ros-dev/install/zed_components:/opt/ros/humble

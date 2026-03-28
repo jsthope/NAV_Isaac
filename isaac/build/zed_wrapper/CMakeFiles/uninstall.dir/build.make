@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_wrapper
+CMAKE_SOURCE_DIR = /workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_wrapper
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper
+CMAKE_BINARY_DIR = /workspaces/isaac_ros-dev/build/zed_wrapper
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_wrapper /home/xplore/dev_ws/src/localization/camera/isaac/src/zed-ros2-wrapper/zed_wrapper /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper /home/xplore/dev_ws/src/localization/camera/isaac/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /workspaces/isaac_ros-dev/build/zed_wrapper && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_wrapper /workspaces/isaac_ros-dev/src/zed-ros2-wrapper/zed_wrapper /workspaces/isaac_ros-dev/build/zed_wrapper /workspaces/isaac_ros-dev/build/zed_wrapper /workspaces/isaac_ros-dev/build/zed_wrapper/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

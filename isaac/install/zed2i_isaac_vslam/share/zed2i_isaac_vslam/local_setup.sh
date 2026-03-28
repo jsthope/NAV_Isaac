@@ -1,1 +1,0 @@
-/home/xplore/dev_ws/src/localization/camera/isaac/build/zed2i_isaac_vslam/ament_cmake_environment_hooks/local_setup.sh
