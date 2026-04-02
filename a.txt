@@ -1,0 +1,17 @@
+# Move to the `src` folder of the ROS 2 Workspace
+cd ${ISAAC_ROS_WS}/src
+git clone https://github.com/stereolabs/zed-ros2-wrapper.git
+cd ..
+sudo apt-get update
+# Install the required dependencies
+rosdep install --from-paths src --ignore-src -r -y
+# Build the wrapper
+colcon build --symlink-install --cmake-args=-DCMAKE_BUILD_TYPE=Release --packages-up-to zed_wrapper
+# Setup the environment variables
+echo source $(pwd)/install/local_setup.bash >> ~/.bashrc
+source ~/.bashrc
+
+cd ${ISAAC_ROS_WS}
+rm -rf build/ install/ log/
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --packages-up-to zed_wrapper
+source install/local_setup.bash
